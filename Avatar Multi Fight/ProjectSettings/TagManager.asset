@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 2543718523
+    locked: 0
+  - name: Palmera
+    uniqueID: 2423397919
+    locked: 0
+  - name: Planta 1
+    uniqueID: 3788345851
+    locked: 0
+  - name: Planta 2
+    uniqueID: 1925889029
+    locked: 0
+  - name: Planta 3
+    uniqueID: 3518865965
+    locked: 0
