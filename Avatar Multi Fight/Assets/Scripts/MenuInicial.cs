@@ -18,4 +18,19 @@ public class MenuInicial : MonoBehaviour
         Application.Quit();
 
     }
+
+    public void Jugar2()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+
+    }
+
+    public void Salir1()
+    {
+        Debug.Log("Salir...");
+        Application.Quit();
+
+    }
 }
+
+

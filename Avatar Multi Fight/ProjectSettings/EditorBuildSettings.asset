@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu inicial-juego.unity
     guid: 5771394d01a9f1249b0d97a9a5d252d5
   - enabled: 1
+    path: Assets/Scenes/Beach.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/ice scene.unity
     guid: 46c91f2dc2165384683663faca465001
   - enabled: 1
