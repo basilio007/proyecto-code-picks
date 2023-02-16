@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Playermovement : MonoBehaviour
 {
-    bool canJump;
+    //bool canJump;
 
     // Start is called before the first frame update
     void Start()
@@ -52,10 +52,10 @@ public class Playermovement : MonoBehaviour
     //colider con el que se ha chocado
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag == "ground")
+        /*if (collision.transform.tag == "ground")
         {
             canJump = true;
-        }
+        }*/
     }
 
 }
