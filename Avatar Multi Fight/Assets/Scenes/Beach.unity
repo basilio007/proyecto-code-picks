@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3614d48ff94b7d4fb5961e8bcdcddf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 4
+  velocidadMovimiento: 0
   distancia: 2
   queEsSuelo:
     serializedVersion: 2

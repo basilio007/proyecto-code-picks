@@ -5,11 +5,12 @@ using UnityEngine;
 public class Playermovement : MonoBehaviour
 {
     //bool canJump;
+    Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class Playermovement : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime, 0));
             gameObject.GetComponent<Animator>().SetBool("moving", true);
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
+           
         }
 
         if (Input.GetKey("right"))
@@ -37,13 +39,18 @@ public class Playermovement : MonoBehaviour
 
         if(!Input.GetKey("left") && !Input.GetKey("right"))
         {
-            gameObject.GetComponent<Animator>().SetBool("moving", false);
+            anim.SetBool("moving", false);
+        }
+
+        //animacion puño
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            anim.SetTrigger("puño");
         }
 
         //solo se activa si la tecla esta pulsada
         if (Input.GetKeyDown("up"))
         {
-
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 100f));
 
         }
