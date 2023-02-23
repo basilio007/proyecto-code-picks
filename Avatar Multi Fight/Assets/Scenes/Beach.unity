@@ -1204,7 +1204,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1751248773
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f240dfd4814d34d55a9b033f3c9d8a60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1247,6 +1247,7 @@ GameObject:
   - component: {fileID: 1682044956}
   - component: {fileID: 1682044955}
   - component: {fileID: 1682044962}
+  - component: {fileID: 1682044963}
   m_Layer: 0
   m_Name: Chica
   m_TagString: Enemigo
@@ -1443,8 +1444,19 @@ MonoBehaviour:
   velocidadMovimiento: 0
   distancia: 2
   queEsSuelo:
-    serializedVersion: 2
     m_Bits: 0
+--- !u!114 &1682044963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682044954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0f68a50e149a948a05eb457489fb3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1706129261
 GameObject:
   m_ObjectHideFlags: 0
