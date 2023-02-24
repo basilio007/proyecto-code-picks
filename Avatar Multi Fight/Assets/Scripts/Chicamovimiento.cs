@@ -4,66 +4,72 @@ using UnityEngine;
 
 public class Chicamovimiento : MonoBehaviour
 {
-    //bool canJump;
-    Animator anim;
-
-    // Start is called before the first frame update
+    [SerializeField] private float velocidaddemovimiento;
+    [SerializeField] private Transform[] puntordemovimiento;
+    [SerializeField] private float distancia;
+    private int numrandom;
+    private SpriteRenderer spriteRenderer;
     void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
+        numrandom = Random.Range(0, puntordemovimiento.Length);
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        Girar();
     }
 
-    // Update is called once per frame
-    //frame por segundo varia depende de lo rapido que el ordenador . para evitar esto utilizamos 
     void Update()
     {
-        //comprobar por cada frame si estamos utilizando una tecla o no
-
-        //sera true si la flecha left esta pulsada
-        if (Input.GetKeyDown(KeyCode.S))
+        transform.position = Vector2.MoveTowards(transform.position, puntordemovimiento[numrandom].position, velocidaddemovimiento * Time.deltaTime);
+        if (Vector2.Distance(transform.position, puntordemovimiento[numrandom].position) < distancia)
         {
 
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f * Time.deltaTime, 0));
-            gameObject.GetComponent<Animator>().SetBool("movimiento", true);
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
-
+            numrandom = Random.Range(0, puntordemovimiento.Length);
+            Girar();
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
 
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime, 0));
-            gameObject.GetComponent<Animator>().SetBool("movimiento", true);
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
-        }
-
-        if (!Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.A))
-        {
-            anim.SetBool("movimiento", false);
-        }
-
-        //animacion puño
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            anim.SetTrigger("patada");
-        }
-
-        //solo se activa si la tecla esta pulsada
-        if (Input.GetKeyDown("up"))
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 100f));
-
-        }
     }
-
-    //colider con el que se ha chocado
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Girar()
     {
-        /*if (collision.transform.tag == "ground")
+        if (transform.position.x < puntordemovimiento[numrandom].position.x)
         {
-            canJump = true;
-        }*/
+            spriteRenderer.flipX = true;
+
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
     }
+
+    private float tiempo;
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            Debug.Log("Jugador Entro");
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            tiempo += Time.deltaTime;
+            Debug.Log("Jugador en bloque");
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            Debug.Log("Jugador Salio : " + tiempo);
+            tiempo = 0;
+        }
+    }
+
+
 }
    
 
