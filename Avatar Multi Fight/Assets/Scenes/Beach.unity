@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 553236163}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1277,7 +1277,6 @@ GameObject:
   - component: {fileID: 1682044957}
   - component: {fileID: 1682044956}
   - component: {fileID: 1682044955}
-  - component: {fileID: 1682044962}
   - component: {fileID: 1682044963}
   m_Layer: 0
   m_Name: Chica
@@ -1460,18 +1459,6 @@ RectTransform:
   m_AnchoredPosition: {x: 9.24, y: -0.7}
   m_SizeDelta: {x: 0.96, y: 0.63}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1682044962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682044954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3614d48ff94b7d4fb5961e8bcdcddf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1682044963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,14 +1468,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1682044954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc0f68a50e149a948a05eb457489fb3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 630f4310bb19ef4458625789a9dc0482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidaddemovimiento: 1
+  velocidaddemovimiento: 2
   puntordemovimiento:
-  - {fileID: 2138885532}
-  - {fileID: 1435555933}
-  distancia: 2
+  - {fileID: 553236159}
+  distancia: 4
 --- !u!1 &1706129261
 GameObject:
   m_ObjectHideFlags: 0
