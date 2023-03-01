@@ -91,5 +91,15 @@ public class Noumoviment : MonoBehaviour
         {
             anim1.SetTrigger("patada");
         }
+       
+    }
+
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("ASDF");
+
+        
     }
 }
