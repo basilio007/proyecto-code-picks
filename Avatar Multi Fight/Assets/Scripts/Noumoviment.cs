@@ -43,8 +43,13 @@ public class Noumoviment : MonoBehaviour
     [SerializeField] private float distancia;
     private int numrandom;
     private SpriteRenderer spriteRenderer;
+
+    //bool canJump;
+    Animator anim1;
+
     void Start()
     {
+        anim1 = gameObject.GetComponent<Animator>();
         numrandom = Random.Range(0, puntordemovimiento.Length);
         spriteRenderer = GetComponent<SpriteRenderer>();
         Girar();
@@ -58,6 +63,9 @@ public class Noumoviment : MonoBehaviour
 
             numrandom = Random.Range(0, puntordemovimiento.Length);
             Girar();
+
+            //animacion puño
+            
         }
 
 
@@ -81,7 +89,7 @@ public class Noumoviment : MonoBehaviour
     {
         if (other.collider.CompareTag("Player"))
         {
-            Debug.Log("Jugador Entro");
+            anim1.SetTrigger("patada");
         }
     }
 }
