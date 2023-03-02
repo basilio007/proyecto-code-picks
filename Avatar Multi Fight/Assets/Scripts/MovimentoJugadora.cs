@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*public class Playermovement : MonoBehaviour
+public class MovimentoJugadora : MonoBehaviour
 {
     //bool canJump;
     Animator anim;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ using UnityEngine;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime, 0));
             gameObject.GetComponent<Animator>().SetBool("moving", true);
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
-           
+
         }
 
         if (Input.GetKey("right"))
@@ -34,10 +35,10 @@ using UnityEngine;
 
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f * Time.deltaTime, 0));
             gameObject.GetComponent<Animator>().SetBool("moving", true);
-           gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        if(!Input.GetKey("left") && !Input.GetKey("right"))
+        if (!Input.GetKey("left") && !Input.GetKey("right"))
         {
             anim.SetBool("moving", false);
         }
@@ -45,7 +46,13 @@ using UnityEngine;
         //animacion puño
         if (Input.GetKeyDown(KeyCode.W))
         {
-            anim.SetTrigger("puño");
+            anim.SetTrigger("patada");
+        }
+
+        //animacion puño
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            anim.SetTrigger("PUÑO");
         }
 
         //solo se activa si la tecla esta pulsada
@@ -59,11 +66,11 @@ using UnityEngine;
     //colider con el que se ha chocado
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        /if (collision.transform.tag == "ground")
+        /*if (collision.transform.tag == "ground")
         {
             canJump = true;
-        }
-   }
-*/
+        }*/
+    }
 
+}
 

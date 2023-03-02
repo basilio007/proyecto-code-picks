@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*public class Noumoviment : MonoBehaviour
+public class MovimientoEnemigo: MonoBehaviour
 {
-    /*[SerializeField] public Transform jugador;
+    /* [SerializeField] public Transform jugador;
      [SerializeField] private float distancia;
 
      public Vector3 puntoInicial;
@@ -38,11 +38,7 @@ using UnityEngine;
              spriteRenderer.flipX = false;
          }
      }*/
-
-
-
-
-  /*  [SerializeField] private float velocidaddemovimiento;
+    [SerializeField] private float velocidaddemovimiento;
     [SerializeField] private Transform[] puntordemovimiento;
     [SerializeField] private float distancia;
     private int numrandom;
@@ -69,7 +65,7 @@ using UnityEngine;
             Girar();
 
             //animacion puño
-            
+
         }
 
 
@@ -91,11 +87,11 @@ using UnityEngine;
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.CompareTag("Player"))
+        if (other.collider.CompareTag("Chica2"))
         {
-            anim1.SetTrigger("patada");
+            anim1.SetTrigger("puño");
         }
-       
+
     }
 
 
@@ -104,7 +100,6 @@ using UnityEngine;
     {
         Debug.Log("ASDF");
 
-        
+
     }
 }
-*/
