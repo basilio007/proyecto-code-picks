@@ -13,7 +13,7 @@ public class SeguirChica : StateMachineBehaviour
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        jugadora = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        jugadora = GameObject.FindGameObjectWithTag("Chica2").GetComponent<Transform>();
         chico = animator.gameObject.GetComponent<MovimientoEnemigo>();
     }
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
