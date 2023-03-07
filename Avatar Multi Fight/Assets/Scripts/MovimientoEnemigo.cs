@@ -89,7 +89,13 @@ public class MovimientoEnemigo: MonoBehaviour
     {
         if (other.collider.CompareTag("Chica2"))
         {
+           
             anim1.SetTrigger("puño");
+           
+        }
+        else if (!other.collider.CompareTag("Chica2"))
+        {
+            anim1.SetBool("movimiento", true);
         }
 
     }
