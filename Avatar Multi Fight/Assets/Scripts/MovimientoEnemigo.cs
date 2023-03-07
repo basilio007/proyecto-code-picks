@@ -87,6 +87,7 @@ public class MovimientoEnemigo: MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        /*
         if (other.collider.CompareTag("Chica2"))
         {
            
@@ -96,8 +97,18 @@ public class MovimientoEnemigo: MonoBehaviour
         else if (!other.collider.CompareTag("Chica2"))
         {
             anim1.SetBool("movimiento", true);
-        }
+        }*/
 
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Chica2"))
+        {
+
+            anim1.SetTrigger("puño");
+
+        }
     }
 
 
