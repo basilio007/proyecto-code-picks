@@ -71,6 +71,15 @@ public class MovimentoJugadora : MonoBehaviour
             canJump = true;
         }*/
     }
+    /*private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Chica2"))
+        {
+
+            anim1.SetTrigger("puño");
+
+        }
+    }*/
 
 }
 
