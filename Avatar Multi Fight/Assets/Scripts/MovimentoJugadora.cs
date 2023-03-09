@@ -18,6 +18,7 @@ public class MovimentoJugadora : MonoBehaviour
     //frame por segundo varia depende de lo rapido que el ordenador . para evitar esto utilizamos 
     void Update()
     {
+         
         //comprobar por cada frame si estamos utilizando una tecla o no
 
         //sera true si la flecha left esta pulsada
@@ -71,15 +72,20 @@ public class MovimentoJugadora : MonoBehaviour
             canJump = true;
         }*/
     }
-    /*private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Chica2"))
+        if (collision.collider.CompareTag("Enemigo"))
         {
 
-            anim1.SetTrigger("puño");
+            anim.SetTrigger("daño");
 
         }
-    }*/
+        else if (!collision.collider.CompareTag("Enemigo"))
+        {
+
+            anim.SetBool("moving", true);
+        }
+    }
 
 }
 
