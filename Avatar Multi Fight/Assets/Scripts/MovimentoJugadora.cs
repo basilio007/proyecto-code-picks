@@ -58,7 +58,11 @@ public class MovimentoJugadora : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
             anim.SetTrigger("nuclearkick");
+
+
         }
+        
+
 
         //solo se activa si la tecla esta pulsada
         /*if (Input.GetKeyDown("up"))
@@ -76,11 +80,13 @@ public class MovimentoJugadora : MonoBehaviour
             canJump = true;
         }*/
     }
+
+  
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Enemigo"))
         {
-
+            
             anim.SetTrigger("daño");
           
 
