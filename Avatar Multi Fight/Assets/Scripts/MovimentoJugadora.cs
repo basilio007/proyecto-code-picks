@@ -55,13 +55,17 @@ public class MovimentoJugadora : MonoBehaviour
         {
             anim.SetTrigger("PUÑO");
         }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            anim.SetTrigger("nuclearkick");
+        }
 
         //solo se activa si la tecla esta pulsada
-        if (Input.GetKeyDown("up"))
+        /*if (Input.GetKeyDown("up"))
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 100f));
 
-        }
+        }*/
     }
 
     //colider con el que se ha chocado
@@ -78,6 +82,7 @@ public class MovimentoJugadora : MonoBehaviour
         {
 
             anim.SetTrigger("daño");
+          
 
         }
         else if (!collision.collider.CompareTag("Enemigo"))
