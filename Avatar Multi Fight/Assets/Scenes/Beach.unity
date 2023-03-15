@@ -1543,8 +1543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddaaf3852816a7a4abd432fb63726890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: {fileID: 0}
-  vidaactual: 12
+  vida: {fileID: 617956555}
+  vidaactual: 100
   vidamaxima: 100
 --- !u!1 &1647481532
 GameObject:
