@@ -23,23 +23,12 @@ public class barradevida : MonoBehaviour
         
         vida.fillAmount = vidaactual / vidamaxima;
 
+        //vidaactual = anim.GetComponent<barradevida>().
+
 
     }
   
 
-   /* private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("EL trigger ha entrado");
-
-        if(other.tag == "Enemigo")
-        {
-            vidaactual = 50;
-            
-            
-        }
-
-    
-    }*/
 
    
 
@@ -48,12 +37,12 @@ public class barradevida : MonoBehaviour
 
 
 
-   private void OnCollisionStay2D(Collision2D collision)
+   /*private void OnCollisionStay2D(Collision2D collision)
      {
          if (collision.collider.CompareTag("Enemigo"))
          {
 
              vidaactual = 10;
          }
-     }
+     }*/
 }

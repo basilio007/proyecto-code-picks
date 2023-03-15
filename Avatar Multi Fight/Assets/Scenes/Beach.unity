@@ -338,6 +338,7 @@ MonoBehaviour:
   puntordemovimiento:
   - {fileID: 1444571675}
   distancia: 4
+  damage: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

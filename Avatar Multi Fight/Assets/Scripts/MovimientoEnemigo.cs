@@ -15,7 +15,7 @@ public class MovimientoEnemigo: MonoBehaviour
     Animator anim1;
 
 
-   // public int damage; daño barra de vida
+    public int damage; //daño barra de vida
     
 
     void Start()
@@ -82,18 +82,15 @@ public class MovimientoEnemigo: MonoBehaviour
         }
     }
 
-   /* private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Chica2")
         {
-            damage = 33;
-            anim1.GetComponent<MovimentoJugadora>().VidaActual -= damage;
+            
+            anim1.GetComponent<barradevida>().vidaactual -= damage;
         }
-        if (other.tag == "Enemigo")
-        {
-
-        }
-    }*/
+        
+    }
 
 
 
