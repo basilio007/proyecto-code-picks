@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class MovimentoJugadora : MonoBehaviour
 {
+    
+    //public float VidaActual;
+
+
+
+
     //bool canJump;
     Animator anim;
     

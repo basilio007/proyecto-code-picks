@@ -4,40 +4,7 @@ using UnityEngine;
 
 public class MovimientoEnemigo: MonoBehaviour
 {
-    /* [SerializeField] public Transform jugador;
-     [SerializeField] private float distancia;
-
-     public Vector3 puntoInicial;
-     private Animator animator;
-     private SpriteRenderer spriteRenderer;
-
-
-     private void Start()
-     {
-         animator = GetComponent<Animator>();
-         puntoInicial = transform.position;
-         spriteRenderer = GetComponent<SpriteRenderer>();
-
-     }
-
-
-     private void Update()
-     {
-         distancia = Vector2.Distance(transform.position, jugador.position);
-         animator.SetFloat("distancia", distancia);
-     }
-
-     public void Girar(Vector3 objetivo)
-     {
-         if (transform.position.x < objetivo.x)
-         {
-             spriteRenderer.flipX = true;
-         }
-         else 
-         {
-             spriteRenderer.flipX = false;
-         }
-     }*/
+ 
     [SerializeField] private float velocidaddemovimiento;
     [SerializeField] private Transform[] puntordemovimiento;
     [SerializeField] private float distancia;
@@ -46,6 +13,10 @@ public class MovimientoEnemigo: MonoBehaviour
 
     //bool canJump;
     Animator anim1;
+
+
+   // public int damage; daño barra de vida
+    
 
     void Start()
     {
@@ -110,6 +81,30 @@ public class MovimientoEnemigo: MonoBehaviour
 
         }
     }
+
+   /* private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Chica2")
+        {
+            damage = 33;
+            anim1.GetComponent<MovimentoJugadora>().VidaActual -= damage;
+        }
+        if (other.tag == "Enemigo")
+        {
+
+        }
+    }*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
