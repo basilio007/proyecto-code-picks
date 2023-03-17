@@ -82,7 +82,7 @@ public class MovimientoEnemigo: MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Chica2")
         {
@@ -91,7 +91,7 @@ public class MovimientoEnemigo: MonoBehaviour
         }
         
     }
-
+    */
 
 
 
