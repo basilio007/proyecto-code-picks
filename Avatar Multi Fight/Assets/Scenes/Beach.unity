@@ -268,12 +268,13 @@ GameObject:
   m_Component:
   - component: {fileID: 516704127}
   - component: {fileID: 516704126}
-  - component: {fileID: 516704125}
   - component: {fileID: 516704124}
+  - component: {fileID: 516704125}
   - component: {fileID: 516704123}
   - component: {fileID: 516704122}
   - component: {fileID: 516704128}
   - component: {fileID: 516704129}
+  - component: {fileID: 516704130}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Enemigo
@@ -347,7 +348,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.038807906, y: -0.059738666}
+  m_Offset: {x: 0.05, y: -0.059738666}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -420,8 +421,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516704120}
   m_LocalRotation: {x: -0, y: -0.03134567, z: -0, w: 0.9995086}
-  m_LocalPosition: {x: 8.44, y: -1.29, z: 2.26}
-  m_LocalScale: {x: 7.321103, y: 11.076505, z: 1}
+  m_LocalPosition: {x: 8.98, y: -1.08, z: 2.29}
+  m_LocalScale: {x: 4.880415, y: 11.46086, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -443,7 +444,6 @@ MonoBehaviour:
   puntordemovimiento:
   - {fileID: 1444571675}
   distancia: 4
-  damage: 10
 --- !u!114 &516704129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,8 +456,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdc2deb84f95dc74a8a6d7c5eca95728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 55
+  damage: 2
   Chica2: {fileID: 1444571666}
+--- !u!61 &516704130
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516704120}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09, y: -0.05973867}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96, y: 0.63}
+    newSize: {x: 0.96, y: 0.63}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.57}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1672,7 @@ GameObject:
   - component: {fileID: 1444571669}
   - component: {fileID: 1444571667}
   - component: {fileID: 1444571676}
+  - component: {fileID: 1444571677}
   m_Layer: 0
   m_Name: Chica2
   m_TagString: Chica2
@@ -1827,7 +1854,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444571666}
   m_LocalRotation: {x: -0, y: 0.18175231, z: -0, w: 0.9833444}
-  m_LocalPosition: {x: 0, y: 0, z: 2.32}
+  m_LocalPosition: {x: 0, y: 0, z: 3.06}
   m_LocalScale: {x: 6.3334765, y: 11.763197, z: 0.95581}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1836,8 +1863,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 20.944, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.14, y: -0.94}
-  m_SizeDelta: {x: 0.96, y: 0.63}
+  m_AnchoredPosition: {x: -10.25, y: -0.85}
+  m_SizeDelta: {x: 0.2552, y: 0.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444571676
 MonoBehaviour:
@@ -1853,6 +1880,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaPlayer: 100
   vidaVisual: {fileID: 1924982042}
+--- !u!61 &1444571677
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444571666}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.031713, y: -0.08062831}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96, y: 0.63}
+    newSize: {x: 0.96, y: 0.63}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.2488028, y: 0.4687434}
+  m_EdgeRadius: 0
 --- !u!1 &1647481532
 GameObject:
   m_ObjectHideFlags: 0
