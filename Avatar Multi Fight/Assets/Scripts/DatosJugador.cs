@@ -11,10 +11,19 @@ public class DatosJugador : MonoBehaviour
    private void Update()
     {
         vidaVisual.GetComponent<Slider>().value = vidaPlayer;
+
         if(vidaPlayer <=0)
         {
             Debug.Log("GAME OVER");
         }
 
     }
+
+    public void restarVida(int vida)
+    {
+        Debug.Log("restarVda");
+        vidaPlayer -= vida;
+    }
+
+
 }

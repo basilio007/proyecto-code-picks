@@ -15,7 +15,7 @@ public class MovimientoEnemigo: MonoBehaviour
     Animator anim1;
 
 
-    public int damage; //daño barra de vida
+    //public int damage; //daño barra de vida
     
 
     void Start()
