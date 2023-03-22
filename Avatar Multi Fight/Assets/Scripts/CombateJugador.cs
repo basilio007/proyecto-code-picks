@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CombateJugador : MonoBehaviour
 {
-    [SerializeField] private float vida;
+   /* [SerializeField] private float vida;
 
     [SerializeField] private float maximoVida;
 
@@ -34,5 +34,5 @@ public class CombateJugador : MonoBehaviour
     void Update()
     {
 
-    }
+    }*/
 }

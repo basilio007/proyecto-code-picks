@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Espinas : MonoBehaviour
 {
-    [SerializeField] private float tiempoEntreDaño;
+   /* [SerializeField] private float tiempoEntreDaño;
     private float tiempoSiguienteDano;
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -17,5 +17,5 @@ public class Espinas : MonoBehaviour
                 tiempoSiguienteDano = tiempoEntreDaño;
             }
         }
-    }
+    }*/
 }
