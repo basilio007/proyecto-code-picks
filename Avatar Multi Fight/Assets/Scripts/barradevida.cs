@@ -1,48 +1,20 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class barradevida : MonoBehaviour
+public class BarraDeVida : MonoBehaviour
 {
-    Animator anim;
-    public Image vida;
+    public Image barraDeVida;
 
-    public float vidaactual;
+    public float vidaActual;
 
-    public float vidamaxima;
-
+    public float vidaMaxima;
 
    
-
-    // Update is called once per frame
+    
     void Update()
     {
-        
-        vida.fillAmount = vidaactual / vidamaxima;
-
-        //vidaactual = anim.GetComponent<barradevida>().
-
-
+        barraDeVida.fillAmount = vidaActual / vidaMaxima;
     }
-  
-
-
-   
-
-    
-
-
-
-
-   /*private void OnCollisionStay2D(Collision2D collision)
-     {
-         if (collision.collider.CompareTag("Enemigo"))
-         {
-
-             vidaactual = 10;
-         }
-     }*/
 }
