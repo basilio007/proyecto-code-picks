@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ice scene.unity
     guid: 46c91f2dc2165384683663faca465001
   - enabled: 1
+    path: Assets/Scenes/Beach.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
     path: Assets/Scenes/muntanya.unity
     guid: 76f07ff57e2562a4aa6bfdb5f7ee0faf
   m_configObjects: {}
