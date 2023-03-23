@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class DatosJugador : MonoBehaviour
 {
     public int vidaPlayer;
     public Slider vidaVisual;
+
+
+    public event EventHandler MuerteJugadora;
+
 
    private void Update()
     {
@@ -14,6 +19,7 @@ public class DatosJugador : MonoBehaviour
 
         if(vidaPlayer <=0)
         {
+            MuerteJugadora?.Invoke(this,EventArgs.Empty);
             Debug.Log("GAME OVER");
         }
 
