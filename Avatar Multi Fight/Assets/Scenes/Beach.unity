@@ -2080,7 +2080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af559c27de6bf5a4d87b812c527ab091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuGameOver: {fileID: 70590931}
+  menuGameOver: {fileID: 1438265889}
 --- !u!114 &1438265891
 MonoBehaviour:
   m_ObjectHideFlags: 0
