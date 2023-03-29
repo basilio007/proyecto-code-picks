@@ -87,7 +87,7 @@ public class MovimentoJugadora : MonoBehaviour
         }*/
     }
 
-  
+  //CUANDO DETECTA EL TIO ENEMIGO HACE LA ANIMACION  QUE ESTA HERIDA
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Enemigo"))

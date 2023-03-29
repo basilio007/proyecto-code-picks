@@ -72,6 +72,7 @@ public class MovimientoEnemigo: MonoBehaviour
 
     }
 
+    //CUANDO DETECTA A LA CHICA LE PEGA UN PUÑETAZO
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Chica2"))
