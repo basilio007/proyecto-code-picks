@@ -78,7 +78,6 @@ public class MovimientoEnemigo: MonoBehaviour
         if (collision.collider.CompareTag("Chica2"))
         {
 
-            anim1.SetTrigger("puño");
 
         }
     }

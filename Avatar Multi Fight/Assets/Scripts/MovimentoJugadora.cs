@@ -93,7 +93,7 @@ public class MovimentoJugadora : MonoBehaviour
         if (collision.collider.CompareTag("Enemigo"))
         {
             
-            anim.SetTrigger("daño");
+            //anim.SetTrigger("daño");
           
 
         }

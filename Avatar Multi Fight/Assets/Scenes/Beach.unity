@@ -535,6 +535,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 2
   Chica2: {fileID: 1444571666}
+  time_to_hit: 0
+  timeCooldown: 0
 --- !u!61 &516704130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2417,8 +2419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730fdb656f8157d4ea2a442258fa68b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaPlayer: 100
+  vida_Vieja: 0
   vidaVisual: {fileID: 1924982042}
+  END: {fileID: 1438265889}
 --- !u!61 &1444571677
 BoxCollider2D:
   m_ObjectHideFlags: 0

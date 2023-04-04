@@ -7,20 +7,39 @@ public class ChicoPega : MonoBehaviour
     public int damage;
     public GameObject Chica2;
 
+    public float time_to_hit;
+    public float timeCooldown;
+    Animator Anim1;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void Start() 
     {
-        Debug.Log(other.tag);
+        Anim1 = gameObject.GetComponent<Animator>();
+        timeCooldown = 1f;
+    }
 
-        if (other.tag == "Chica2")
+    void OnTriggerStay2D(Collider2D col)
+    {
+        Debug.Log(col.tag);
+
+        if (col.tag == "Chica2")
         {
-
-            Chica2.GetComponent<DatosJugador>().restarVida(damage);
+            if (Time.timeSinceLevelLoad > time_to_hit)
+            {
+                time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
+                DatosJugador.vidaPlayer -= damage;
+                Anim1.SetBool("Puño", true);
+            }
+            else 
+            {
+                Anim1.SetBool("Puño",false);
+            }
+            
+            //Chica2.GetComponent<DatosJugador>().restarVida(damage);
             Debug.Log("entra puño de tio duro");
 
         }
 
-        if (other.tag == "Enemigo")
+        if (col.tag == "Enemigo")
         {
             Debug.Log("Esto es un enemigo");
         }
