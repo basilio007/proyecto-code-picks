@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 516704128}
   - component: {fileID: 516704129}
   - component: {fileID: 516704130}
+  - component: {fileID: 516704131}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Enemigo
@@ -563,6 +564,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.57}
   m_EdgeRadius: 0
+--- !u!114 &516704131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516704120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f70c233eca26fa4c9c624e0ecbaf42e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida_Vieja: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,6 +2228,7 @@ GameObject:
   - component: {fileID: 1444571667}
   - component: {fileID: 1444571676}
   - component: {fileID: 1444571677}
+  - component: {fileID: 1444571678}
   m_Layer: 0
   m_Name: Chica2
   m_TagString: Chica2
@@ -2448,6 +2463,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2488028, y: 0.4687434}
   m_EdgeRadius: 0
+--- !u!114 &1444571678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444571666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96582128062f70440bd4e91b17ef8afc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_chica: 50
+  Enemigo: {fileID: 0}
+  time_to_hit: 0
+  timeCooldown: 0
 --- !u!1 &1603209415
 GameObject:
   m_ObjectHideFlags: 0
