@@ -57,7 +57,11 @@ public class Chicoversus : MonoBehaviour
         {
             anim.SetBool("Puño",true);
         }
-      
+        if (!Input.GetKeyDown(KeyCode.Z))
+        {
+            anim.SetBool("Puño", false);
+        }
+
 
 
         //solo se activa si la tecla esta pulsada
