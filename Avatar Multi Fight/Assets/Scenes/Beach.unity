@@ -2475,7 +2475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96582128062f70440bd4e91b17ef8afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_chica: 50
+  damage_chica: 20
   Enemigo: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0

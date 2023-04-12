@@ -14,7 +14,7 @@ public class CHICAPEGA : MonoBehaviour
     void Start()
     {
         Anim3 = gameObject.GetComponent<Animator>();
-        timeCooldown = 1.7f;
+        timeCooldown = 1.67f;
 
     }
     /*void Update()
