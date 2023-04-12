@@ -14,9 +14,10 @@ public class CHICAPEGA : MonoBehaviour
     void Start()
     {
         Anim3 = gameObject.GetComponent<Animator>();
-        timeCooldown = 1.2f;
+        timeCooldown = 1.7f;
+
     }
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A))
         {
@@ -36,46 +37,71 @@ public class CHICAPEGA : MonoBehaviour
             Debug.Log("OSTIA CHICA");
         }
     }
+    */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-    /*void OnTriggerStay2D(Collider2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
         Debug.Log(col.tag);
 
         if (col.tag == "Enemigo")
+
         {
-            if (Time.timeSinceLevelLoad > time_to_hit)
+            if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A))
             {
-                time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
-                VIDACHICO.vidaENEMIGO -= damage_chica;
+                if (Time.timeSinceLevelLoad > time_to_hit)
+                {
+                    time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
+                    VIDACHICO.vidaENEMIGO -= damage_chica;
 
-                //Anim3.SetTrigger("PUÑO");
+                    //Anim3.SetTrigger("PUÑO");
+                }
+                else
+                {
+                }
+
+                //Chica2.GetComponent<DatosJugador>().restarVida(damage);
+                Debug.Log("OSTIA CHICA");
+
             }
-            else
+
+            if (col.tag == "Enemigo")
             {
+                Debug.Log("Esto es un enemigo");
             }
-
-            //Chica2.GetComponent<DatosJugador>().restarVida(damage);
-            Debug.Log("OSTIA CHICA");
-
         }
+    }
 
-        if (col.tag == "Enemigo")
-        {
-            Debug.Log("Esto es un enemigo");
-        }
-    }*/
+
+    /*void OnTriggerStay2D(Collider2D col)
+ {
+     Debug.Log(col.tag);
+
+     if (col.tag == "Enemigo")
+     {
+         if (Time.timeSinceLevelLoad > time_to_hit)
+         {
+             time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
+             VIDACHICO.vidaENEMIGO -= damage_chica;
+
+             //Anim3.SetTrigger("PUÑO");
+         }
+         else
+         {
+         }
+
+         //Chica2.GetComponent<DatosJugador>().restarVida(damage);
+         Debug.Log("OSTIA CHICA");
+
+     }
+
+     if (col.tag == "Enemigo")
+     {
+         Debug.Log("Esto es un enemigo");
+     }
+ }*/
 
 }
