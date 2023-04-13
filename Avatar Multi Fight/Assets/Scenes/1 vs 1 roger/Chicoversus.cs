@@ -28,7 +28,7 @@ public class Chicoversus : MonoBehaviour
         //comprobar por cada frame si estamos utilizando una tecla o no
 
         //sera true si la flecha left esta pulsada
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
 
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime, 0));
@@ -37,7 +37,7 @@ public class Chicoversus : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D))
         {
 
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f * Time.deltaTime, 0));
@@ -45,19 +45,19 @@ public class Chicoversus : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
-        /*if (!Input.GetKey("left") && !Input.GetKey("right"))
+        if (!Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.D))
         {
             anim.SetBool("moving", false);
         }
-        */
+        
        
 
         //animacion puño tio
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             anim.SetBool("Puño",true);
         }
-        if (!Input.GetKeyDown(KeyCode.Z))
+        if (!Input.GetKeyDown(KeyCode.P))
         {
             anim.SetBool("Puño", false);
         }

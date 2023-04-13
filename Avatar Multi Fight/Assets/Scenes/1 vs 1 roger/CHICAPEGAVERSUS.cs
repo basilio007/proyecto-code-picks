@@ -50,7 +50,7 @@ public class CHICAPEGAVERSUS : MonoBehaviour
         if (col.tag == "Enemigo")
 
         {
-            if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.T))
             {
                 if (Time.timeSinceLevelLoad > time_to_hit)
                 {
