@@ -855,7 +855,7 @@ MonoBehaviour:
   velocidaddemovimiento: 2
   puntordemovimiento:
   - {fileID: 1444571675}
-  distancia: 4
+  distancia: 10
   enemigos:
   - {fileID: 3216674723069755294, guid: b2966413bd8dd024e96bb8e81d5c6751, type: 3}
   - {fileID: 992459530530580627, guid: e6e5e54146e28014aa3d287cfc17f3b6, type: 3}
