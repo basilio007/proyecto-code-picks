@@ -96,7 +96,7 @@ public class enemycontroler : MonoBehaviour
       }
   }
 
-
+    ////////////////////////////////////////modificacio meva//////////////////////
 
  */
 
@@ -113,7 +113,10 @@ public class enemycontroler : MonoBehaviour
 
 
 
-    [SerializeField] private float velocidaddemovimiento;
+    /////////////////////////////////////////////////buena////////////////////////////////////////////////////////
+
+
+  [SerializeField] private float velocidaddemovimiento;
     [SerializeField] private Transform[] puntordemovimiento; // puntos seria aixo
     [SerializeField] private float distancia;
     private int numrandom;
@@ -152,10 +155,56 @@ public class enemycontroler : MonoBehaviour
     private void Crearenemigos()
     {
         int numeroEnemigo = Random.Range(0, enemigos.Length);
-        Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 25));
+        Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 0));
         Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
     }
 }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////video youtube////////////////////////////////////////////////
     /*private float minX, maxX, minY, maxY;
     [SerializeField] private Transform[] puntos;
     [SerializeField] private GameObject[] enemigos;
