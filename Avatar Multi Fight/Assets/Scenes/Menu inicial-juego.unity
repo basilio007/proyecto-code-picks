@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.48600003, y: 1}
-  m_AnchoredPosition: {x: 114.42071, y: 0}
-  m_SizeDelta: {x: 228.8414, y: 0}
+  m_AnchoredPosition: {x: 232.3487, y: 0}
+  m_SizeDelta: {x: 464.6973, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &138097130
 MonoBehaviour:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SALIR
+  m_text: OPCIONES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -473,7 +473,7 @@ GameObject:
   - component: {fileID: 514185786}
   - component: {fileID: 514185785}
   m_Layer: 5
-  m_Name: BotonHistoria
+  m_Name: Boton1vs1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1071,7 +1071,7 @@ GameObject:
   - component: {fileID: 1324842150}
   - component: {fileID: 1324842149}
   m_Layer: 5
-  m_Name: BotonSalir
+  m_Name: BotonOpciones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1461,8 +1461,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.48600003, y: 1}
-  m_AnchoredPosition: {x: 239.5, y: 0}
-  m_SizeDelta: {x: 479, y: 0}
+  m_AnchoredPosition: {x: 197, y: 0}
+  m_SizeDelta: {x: 92.1967, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939672902
 MonoBehaviour:
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HISTORIA
+  m_text: 1VS1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
