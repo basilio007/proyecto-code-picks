@@ -28,7 +28,7 @@ public class Chicoversus : MonoBehaviour
         //comprobar por cada frame si estamos utilizando una tecla o no
 
         //sera true si la flecha left esta pulsada
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey("left"))
         {
 
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime, 0));
@@ -37,7 +37,7 @@ public class Chicoversus : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey("right"))
         {
 
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f * Time.deltaTime, 0));
@@ -45,7 +45,7 @@ public class Chicoversus : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
         }
 
-        if (!Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.D))
+        if (!Input.GetKey("left") && !Input.GetKey("right"))
         {
             anim.SetBool("moving", false);
         }

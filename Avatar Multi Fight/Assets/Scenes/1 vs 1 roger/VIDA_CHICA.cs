@@ -2,45 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VIDACHICOVERSUS : MonoBehaviour
+public class VIDA_CHICA : MonoBehaviour
 {
-    public static int vidaENEMIGO;
+    /*public static int vidaPlayer;
     public int vida_Vieja;
-    //public Slider vidaVisual;
+    public Slider vidaVisual;
     Animator Anim2;
     public GameObject END;
 
 
-    //public event EventHandler MuerteJugador;
+    public event EventHandler MuerteJugadora;
 
     void Start()
     {
         Anim2 = gameObject.GetComponent<Animator>();
-        vidaENEMIGO = 100;
+        vidaPlayer = 100;
         vida_Vieja = 100;
     }
 
 
     private void Update()
     {
-        //vidaVisual.GetComponent<Slider>().value = vidaenemigo;
+        vidaVisual.GetComponent<Slider>().value = vidaPlayer;
 
-        if (vidaENEMIGO != vida_Vieja)
+        if (vidaPlayer != vida_Vieja)
         {
             Anim2.SetTrigger("daño");
             Debug.Log(vida_Vieja);
 
-            vida_Vieja = vidaENEMIGO;
+            vida_Vieja = vidaPlayer;
         }
 
 
-        if (vidaENEMIGO <= 0)
+        if (vidaPlayer <= 0)
         {
-            //MuerteJugador?.Invoke(this, EventArgs.Empty);
+            MuerteJugadora?.Invoke(this, EventArgs.Empty);
             END.SetActive(true);
 
             Debug.Log("GAME OVER");
         }
 
-    }
+    }*/
 }

@@ -28,7 +28,7 @@ public class CHICAMUEVE : MonoBehaviour
         //comprobar por cada frame si estamos utilizando una tecla o no
 
         //sera true si la flecha left esta pulsada
-        if (Input.GetKey("left"))
+        if (Input.GetKey(KeyCode.A))
         {
 
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-300f * Time.deltaTime, 0));
@@ -37,7 +37,7 @@ public class CHICAMUEVE : MonoBehaviour
 
         }
 
-        if (Input.GetKey("right"))
+        if (Input.GetKey(KeyCode.D))
         {
 
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300f * Time.deltaTime, 0));
@@ -45,7 +45,7 @@ public class CHICAMUEVE : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
 
-        if (!Input.GetKey("left") && !Input.GetKey("right"))
+        if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
             anim.SetBool("moving", false);
         }

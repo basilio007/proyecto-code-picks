@@ -424,10 +424,10 @@ GameObject:
   - component: {fileID: 516704124}
   - component: {fileID: 516704125}
   - component: {fileID: 516704123}
-  - component: {fileID: 516704122}
   - component: {fileID: 516704130}
-  - component: {fileID: 516704131}
   - component: {fileID: 516704132}
+  - component: {fileID: 516704133}
+  - component: {fileID: 516704134}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Enemigo
@@ -435,18 +435,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &516704122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516704120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2973421470df2b849ab080760fb393c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &516704123
 Animator:
   serializedVersion: 4
@@ -607,19 +595,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.57}
   m_EdgeRadius: 0
---- !u!114 &516704131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516704120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f70c233eca26fa4c9c624e0ecbaf42e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida_Vieja: 0
 --- !u!114 &516704132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,6 +607,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d367f8667947b4db01c04b52456916, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &516704133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516704120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55bc76bd745d6794c918301b3928142e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_enemigo: 20
+  Chica2: {fileID: 0}
+  time_to_hit: 0
+  timeCooldown: 0
+--- !u!114 &516704134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516704120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f6903a30b220e42b4de0fded90ff97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida_Vieja: 0
+  END: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,7 +2038,7 @@ GameObject:
   - component: {fileID: 1338851672}
   - component: {fileID: 1338851673}
   m_Layer: 5
-  m_Name: Slider2
+  m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2747,7 +2752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96582128062f70440bd4e91b17ef8afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_chica: 20
+  damage_chica: 80
   Enemigo: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0

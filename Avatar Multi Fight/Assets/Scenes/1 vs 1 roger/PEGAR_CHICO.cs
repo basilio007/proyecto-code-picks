@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CHICAPEGA : MonoBehaviour
+public class PEGAR_CHICO : MonoBehaviour
 {
-    public int damage_chica;
-    public GameObject Enemigo;
+    public int damage_enemigo;
+    public GameObject Chica2;
 
     public float time_to_hit;
     public float timeCooldown;
@@ -47,15 +47,15 @@ public class CHICAPEGA : MonoBehaviour
     {
         Debug.Log(col.tag);
 
-        if (col.tag == "Enemigo")
+        if (col.tag == "Chica2")
 
         {
-            if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.P))
             {
                 if (Time.timeSinceLevelLoad > time_to_hit)
                 {
                     time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
-                    VIDACHICOVERSUS.vidaENEMIGO -= damage_chica;
+                    DatosJugador.vidaPlayer -= damage_enemigo;
 
                     //Anim3.SetTrigger("PUÑO");
                 }
@@ -64,44 +64,15 @@ public class CHICAPEGA : MonoBehaviour
                 }
 
                 //Chica2.GetComponent<DatosJugador>().restarVida(damage);
-                Debug.Log("OSTIA CHICA");
+                Debug.Log("OSTIA TIO DURO");
 
             }
 
-            if (col.tag == "Enemigo")
+            if (col.tag == "Chica2")
             {
-                Debug.Log("Esto es un enemigo");
+                Debug.Log("Esto es la chica");
             }
         }
     }
-
-
-    /*void OnTriggerStay2D(Collider2D col)
- {
-     Debug.Log(col.tag);
-
-     if (col.tag == "Enemigo")
-     {
-         if (Time.timeSinceLevelLoad > time_to_hit)
-         {
-             time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
-             VIDACHICO.vidaENEMIGO -= damage_chica;
-
-             //Anim3.SetTrigger("PUÑO");
-         }
-         else
-         {
-         }
-
-         //Chica2.GetComponent<DatosJugador>().restarVida(damage);
-         Debug.Log("OSTIA CHICA");
-
-     }
-
-     if (col.tag == "Enemigo")
-     {
-         Debug.Log("Esto es un enemigo");
-     }
- }*/
 
 }
