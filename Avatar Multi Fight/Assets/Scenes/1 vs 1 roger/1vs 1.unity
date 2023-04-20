@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55bc76bd745d6794c918301b3928142e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_enemigo: 20
+  damage_enemigo: 15
   Chica2: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0
@@ -2065,7 +2065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 676, y: -31}
+  m_AnchoredPosition: {x: 929, y: -36}
   m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338851673
@@ -2765,7 +2765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718451b6993161041bb9191070afda4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage_chica: 99
+  damage_chica: 15
   Enemigo: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0
