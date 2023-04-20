@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
 public class VIDACHICOVERSUS : MonoBehaviour
 {
     public static int vidaENEMIGO;
     public int vida_Vieja;
-    //public Slider vidaVisual;
+    public Slider vidaVisual;
     Animator Anim2;
     public GameObject END;
 
 
-    //public event EventHandler MuerteJugador;
+    public event EventHandler MuerteJugador;
 
     void Start()
     {
@@ -23,7 +25,7 @@ public class VIDACHICOVERSUS : MonoBehaviour
 
     private void Update()
     {
-        //vidaVisual.GetComponent<Slider>().value = vidaenemigo;
+        vidaVisual.GetComponent<Slider>().value = vidaENEMIGO;
 
         if (vidaENEMIGO != vida_Vieja)
         {

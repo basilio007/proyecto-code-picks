@@ -55,7 +55,7 @@ public class CHICAPEGA : MonoBehaviour
                 if (Time.timeSinceLevelLoad > time_to_hit)
                 {
                     time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
-                    VIDACHICOVERSUS.vidaENEMIGO -= damage_chica;
+                    VIDACHICO.vidaENEMIGO -= damage_chica;
 
                     //Anim3.SetTrigger("PUÑO");
                 }

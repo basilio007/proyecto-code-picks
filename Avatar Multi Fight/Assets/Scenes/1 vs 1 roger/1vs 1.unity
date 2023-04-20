@@ -636,7 +636,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida_Vieja: 0
-  END: {fileID: 0}
+  vidaVisual: {fileID: 1338851673}
+  END: {fileID: 1438265889}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2064,7 +2065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 951, y: -29}
+  m_AnchoredPosition: {x: 676, y: -31}
   m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338851673
@@ -2516,8 +2517,8 @@ GameObject:
   - component: {fileID: 1444571669}
   - component: {fileID: 1444571676}
   - component: {fileID: 1444571677}
-  - component: {fileID: 1444571678}
   - component: {fileID: 1444571679}
+  - component: {fileID: 1444571680}
   m_Layer: 0
   m_Name: Chica2
   m_TagString: Chica2
@@ -2740,22 +2741,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2488028, y: 0.4687434}
   m_EdgeRadius: 0
---- !u!114 &1444571678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444571666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96582128062f70440bd4e91b17ef8afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage_chica: 80
-  Enemigo: {fileID: 0}
-  time_to_hit: 0
-  timeCooldown: 0
 --- !u!114 &1444571679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2768,6 +2753,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430747f3d47e97445aea198ff37317ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1444571680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444571666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718451b6993161041bb9191070afda4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_chica: 99
+  Enemigo: {fileID: 0}
+  time_to_hit: 0
+  timeCooldown: 0
 --- !u!1 &1547791841
 GameObject:
   m_ObjectHideFlags: 0
