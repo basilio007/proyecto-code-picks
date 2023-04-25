@@ -34,7 +34,8 @@ public class MenuPause : MonoBehaviour
 
     public void Cerrar ()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
-        Application.Quit();
+        SceneManager.LoadScene("Menu inicial-juego");
+       // UnityEditor.EditorApplication.isPlaying = false;
+        //Application.Quit();
     }
 }
