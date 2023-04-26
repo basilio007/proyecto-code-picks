@@ -9,13 +9,18 @@ public class FondoMovimiento : MonoBehaviour
 
     private Material material;
 
+    private Rigidbody2D chicaCamara;
+
     private void Awake()
     {
         material = GetComponent<SpriteRenderer>().material;
+        chicaCamara = GameObject.FindGameObjectWithTag("Chica2").GetComponent<Rigidbody2D>();//la camara seguira a lachica
+
     }
     private void Update()
     {
-        offset = velocidadMovimiento * Time.deltaTime;
+        //offset = velocidadMovimiento * Time.deltaTime;
+        offset = (chicaCamara.velocity.x * 0.3f) * velocidadMovimiento * Time.deltaTime;
         material.mainTextureOffset += offset;
     }
 }
