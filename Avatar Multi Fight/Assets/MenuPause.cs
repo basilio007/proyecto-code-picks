@@ -10,10 +10,27 @@ public class MenuPause : MonoBehaviour
 
     [SerializeField] private GameObject menuPause;
 
+    private bool JuegoPausado = false;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (JuegoPausado)
+            {
+                Reanudar();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+    }
 
 
     public void Pause()
     {
+        JuegoPausado =true;
         Time.timeScale = 0f;
         botonPause.SetActive(false);
         menuPause.SetActive(true);
@@ -21,6 +38,7 @@ public class MenuPause : MonoBehaviour
 
     public void Reanudar()
     {
+        JuegoPausado = false;
         Time.timeScale = 1f;
         botonPause.SetActive(true);
         menuPause.SetActive(false);
@@ -28,6 +46,7 @@ public class MenuPause : MonoBehaviour
 
     public void Reiniciar()
     {
+        JuegoPausado = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -41,10 +60,10 @@ public class MenuPause : MonoBehaviour
         
         UnityEditor.EditorApplication.isPlaying = false;
         //SceneManager.LoadScene(0);
-        Application.Quit();
-       // SceneManager.LoadScene(0);
+       // menuPause.SetActive(true);
+        // SceneManager.LoadScene(0);
         // SceneManager.LoadScene("Menu inicial-juego");
         // UnityEditor.EditorApplication.isPlaying = false;
-       
+
     }
 }
