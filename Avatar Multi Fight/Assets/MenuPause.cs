@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System;
 public class MenuPause : MonoBehaviour
 
 {
@@ -32,10 +32,19 @@ public class MenuPause : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void MenuInicial(string nombre)
+    {
+        SceneManager.LoadScene(nombre);
+    }
     public void Cerrar ()
     {
-        SceneManager.LoadScene("Menu inicial-juego");
-       // UnityEditor.EditorApplication.isPlaying = false;
-        //Application.Quit();
+        
+        UnityEditor.EditorApplication.isPlaying = false;
+        //SceneManager.LoadScene(0);
+        Application.Quit();
+       // SceneManager.LoadScene(0);
+        // SceneManager.LoadScene("Menu inicial-juego");
+        // UnityEditor.EditorApplication.isPlaying = false;
+       
     }
 }
