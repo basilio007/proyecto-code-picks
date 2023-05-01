@@ -1,10 +1,14 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
 public class enemycontroler : MonoBehaviour
 {
+
+
+
+    public int Id_Enemy;
 
 
     /* [SerializeField] private float velocidaddemovimiento;
@@ -22,7 +26,7 @@ public class enemycontroler : MonoBehaviour
       Animator anim1;
 
 
-      //public int damage; //daño barra de vida
+      //public int damage; //daï¿½o barra de vida
 
 
       void Start()
@@ -42,7 +46,7 @@ public class enemycontroler : MonoBehaviour
              numrandom = Random.Range(0, puntordemovimiento.Length);
             // Girar();
 
-             //animacion puño
+             //animacion puï¿½o
 
 
 
@@ -85,7 +89,7 @@ public class enemycontroler : MonoBehaviour
 
       }
 
-      //CUANDO DETECTA A LA CHICA LE PEGA UN PUÑETAZO
+      //CUANDO DETECTA A LA CHICA LE PEGA UN PUï¿½ETAZO
        void OnCollisionStay2D(Collision2D collision)
       {
           if (collision.collider.CompareTag("Chica2"))
@@ -116,7 +120,7 @@ public class enemycontroler : MonoBehaviour
     /////////////////////////////////////////////////buena////////////////////////////////////////////////////////
 
 
-  [SerializeField] private float velocidaddemovimiento;
+    [SerializeField] private float velocidaddemovimiento;
     [SerializeField] private Transform[] puntordemovimiento; // puntos seria aixo
     [SerializeField] private float distancia;
     private int numrandom;
@@ -131,11 +135,12 @@ public class enemycontroler : MonoBehaviour
     Animator anim1;
 
 
-    //public int damage; //daño barra de vida
+    //public int damage; //daï¿½o barra de vida
 
 
     void Start()
     {
+        Id_Enemy = 0;
         anim1 = gameObject.GetComponent<Animator>();
         numrandom = Random.Range(0, puntordemovimiento.Length);
         //spriteRenderer = GetComponent<SpriteRenderer>();
@@ -154,12 +159,13 @@ public class enemycontroler : MonoBehaviour
 
     private void Crearenemigos()
     {
+        Id_Enemy++;
         int numeroEnemigo = Random.Range(0, enemigos.Length);
         Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 0));
-        Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
+        var newObject = Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
+        newObject.name = "Player_1_" + Id_Enemy.ToString();
     }
 }
-  
 
 
 
@@ -205,39 +211,39 @@ public class enemycontroler : MonoBehaviour
 
 
 ////////////////////////////////////////////////////////video youtube////////////////////////////////////////////////
-    /*private float minX, maxX, minY, maxY;
-    [SerializeField] private Transform[] puntos;
-    [SerializeField] private GameObject[] enemigos;
-    [SerializeField] private float tiempoEnemigos;
-    private float tiempoEnemigosSiguiente;
+/*private float minX, maxX, minY, maxY;
+[SerializeField] private Transform[] puntos;
+[SerializeField] private GameObject[] enemigos;
+[SerializeField] private float tiempoEnemigos;
+private float tiempoEnemigosSiguiente;
 
-    private void Start()
+private void Start()
+{
+    maxX = puntos.Max(punto => punto.position.x);
+    minX = puntos.Min(punto => punto.position.x);
+
+    minX = puntos.Min(punto => punto.position.y);
+    minX = puntos.Min(punto => punto.position.y);
+
+
+}
+
+private void Update()
+{
+    tiempoEnemigosSiguiente += Time.deltaTime;
+    if (tiempoEnemigosSiguiente >= tiempoEnemigos)
     {
-        maxX = puntos.Max(punto => punto.position.x);
-        minX = puntos.Min(punto => punto.position.x);
-
-        minX = puntos.Min(punto => punto.position.y);
-        minX = puntos.Min(punto => punto.position.y);
-
-
+        tiempoEnemigosSiguiente = 0;
+        Crearenemigos();
     }
+}
 
-    private void Update()
-    {
-        tiempoEnemigosSiguiente += Time.deltaTime;
-        if (tiempoEnemigosSiguiente >= tiempoEnemigos)
-        {
-            tiempoEnemigosSiguiente = 0;
-            Crearenemigos();
-        }
-    }
-
-    private void Crearenemigos()
-    {
-        int numeroEnemigo = Random.Range(0, enemigos.Length);
-        Vector2 posicioAleatoria = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-        Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
-    }
+private void Crearenemigos()
+{
+    int numeroEnemigo = Random.Range(0, enemigos.Length);
+    Vector2 posicioAleatoria = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+    Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
+}
 
 
 }*/
