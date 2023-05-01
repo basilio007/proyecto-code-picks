@@ -50,16 +50,16 @@ public class MovimentoJugadora : MonoBehaviour
             anim.SetBool("moving", false);
         }
 
-        //animacion puño
+        //animacion puÃ±o
         if (Input.GetKeyDown(KeyCode.W))
         {
             anim.SetTrigger("patada");
         }
 
-        //animacion puño
+        //animacion puï¿½o
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            anim.SetTrigger("PUÑO");
+            anim.SetTrigger("PUNO");
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -93,7 +93,7 @@ public class MovimentoJugadora : MonoBehaviour
         if (collision.collider.CompareTag("Enemigo"))
         {
             
-            //anim.SetTrigger("daño");
+            //anim.SetTrigger("daï¿½o");
           
 
         }

@@ -6,7 +6,7 @@ using System;
 
 public class VIDACHICO : MonoBehaviour
 {
-    public static int vidaENEMIGO;
+    public int vidaENEMIGO;
     public int vida_Vieja;
     //public Slider vidaVisual;
     Animator Anim2;
@@ -41,7 +41,7 @@ public class VIDACHICO : MonoBehaviour
         {
             
             MuerteChico?.Invoke(this, EventArgs.Empty);
-            //Anim2.SetTrigger("DAÑO_CHICO");
+            //Anim2.SetTrigger("DAï¿½O_CHICO");
             Destroy(gameObject);
            
 

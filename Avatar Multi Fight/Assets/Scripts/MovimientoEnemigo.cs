@@ -5,37 +5,38 @@ using UnityEngine;
 public class MovimientoEnemigo: MonoBehaviour
 {
  
-    [SerializeField] private float velocidaddemovimiento;
-    [SerializeField] private Transform[] puntordemovimiento;
-    [SerializeField] private float distancia;
-    private int numrandom;
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] public float velocidaddemovimiento;
+    [SerializeField] public Transform puntordemovimiento;
+    [SerializeField] public float distancia;
+    public int numrandom;
+    public SpriteRenderer spriteRenderer;
 
     //bool canJump;
     Animator anim1;
 
 
-    //public int damage; //daño barra de vida
+    //public int damage; //daï¿½o barra de vida
     
 
     void Start()
     {
+        puntordemovimiento = GameObject.Find("Chica2").transform;
         anim1 = gameObject.GetComponent<Animator>();
-        numrandom = Random.Range(0, puntordemovimiento.Length);
+        numrandom = Random.Range(0, 1);
         spriteRenderer = GetComponent<SpriteRenderer>();
         Girar();
     }
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, puntordemovimiento[numrandom].position, velocidaddemovimiento * Time.deltaTime);
-        if (Vector2.Distance(transform.position, puntordemovimiento[numrandom].position) < distancia)
+        transform.position = Vector2.MoveTowards(transform.position, puntordemovimiento.position, velocidaddemovimiento * Time.deltaTime);
+        if (Vector2.Distance(transform.position, puntordemovimiento.position) < distancia)
         {
 
-            numrandom = Random.Range(0, puntordemovimiento.Length);
+            numrandom = Random.Range(0, 1);
             Girar();
 
-            //animacion puño
+            //animacion puï¿½o
 
         }
 
@@ -43,7 +44,7 @@ public class MovimientoEnemigo: MonoBehaviour
     }
     private void Girar()
     {
-        if (transform.position.x < puntordemovimiento[numrandom].position.x)
+        if (transform.position.x < puntordemovimiento.position.x)
         {
             spriteRenderer.flipX = true;
 
@@ -62,7 +63,7 @@ public class MovimientoEnemigo: MonoBehaviour
         if (other.collider.CompareTag("Chica2"))
         {
            
-            anim1.SetTrigger("puño");
+            anim1.SetTrigger("puï¿½o");
            
         }
         else if (!other.collider.CompareTag("Chica2"))
@@ -72,7 +73,7 @@ public class MovimientoEnemigo: MonoBehaviour
 
     }
 
-    //CUANDO DETECTA A LA CHICA LE PEGA UN PUÑETAZO
+    //CUANDO DETECTA A LA CHICA LE PEGA UN PUï¿½ETAZO
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Chica2"))
@@ -107,7 +108,6 @@ public class MovimientoEnemigo: MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("ASDF");
 
 
     }

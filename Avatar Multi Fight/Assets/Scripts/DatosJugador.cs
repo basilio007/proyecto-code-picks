@@ -29,9 +29,7 @@ public class DatosJugador : MonoBehaviour
 
         if (vidaPlayer != vida_Vieja)
         {
-            Anim2.SetTrigger("daño");
-            Debug.Log(vida_Vieja);
-
+            Anim2.SetTrigger("dano");
             vida_Vieja = vidaPlayer;
         }
 
