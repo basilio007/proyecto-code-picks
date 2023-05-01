@@ -218,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 92791848}
   - component: {fileID: 92791849}
-  - component: {fileID: 92791850}
+  - component: {fileID: 92791851}
   m_Layer: 0
   m_Name: Snow_G_M (3)
   m_TagString: Untagged
@@ -279,8 +279,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -293,27 +293,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &92791850
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &92791851
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92791847}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &141045416
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 141045417}
   - component: {fileID: 141045418}
-  - component: {fileID: 141045419}
+  - component: {fileID: 141045420}
   m_Layer: 0
   m_Name: Snow_G_M (4)
   m_TagString: Untagged
@@ -385,8 +390,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -399,27 +404,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &141045419
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &141045420
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141045416}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &179513640
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 179513641}
   - component: {fileID: 179513642}
-  - component: {fileID: 179513643}
+  - component: {fileID: 179513644}
   m_Layer: 0
   m_Name: Snow_G_M (11)
   m_TagString: Untagged
@@ -491,8 +501,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -505,27 +515,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &179513643
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &179513644
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179513640}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &223444852
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,7 +551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223444854}
   - component: {fileID: 223444853}
-  - component: {fileID: 223444855}
+  - component: {fileID: 223444856}
   m_Layer: 0
   m_Name: Snow_G_M (17)
   m_TagString: Untagged
@@ -582,8 +597,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -611,27 +626,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &223444855
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &223444856
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223444852}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &262718360
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 299775660}
   - component: {fileID: 299775661}
-  - component: {fileID: 299775662}
+  - component: {fileID: 299775663}
   m_Layer: 0
   m_Name: Snow_G_M (9)
   m_TagString: Untagged
@@ -884,8 +904,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -898,27 +918,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &299775662
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &299775663
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299775659}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &434891859
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434891861}
   - component: {fileID: 434891860}
-  - component: {fileID: 434891862}
+  - component: {fileID: 434891863}
   m_Layer: 0
   m_Name: Snow_G_M (15)
   m_TagString: Untagged
@@ -975,8 +1000,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1004,27 +1029,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &434891862
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &434891863
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434891859}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &522216134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605870557}
   - component: {fileID: 605870556}
-  - component: {fileID: 605870558}
+  - component: {fileID: 605870559}
   m_Layer: 0
   m_Name: Snow_G_M (20)
   m_TagString: Untagged
@@ -1165,8 +1195,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1194,27 +1224,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &605870558
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &605870559
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605870555}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &608629961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,7 +1561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876561463}
   - component: {fileID: 876561464}
-  - component: {fileID: 876561465}
+  - component: {fileID: 876561466}
   m_Layer: 0
   m_Name: Snow_G_M (2)
   m_TagString: Untagged
@@ -1587,8 +1622,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1601,27 +1636,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &876561465
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &876561466
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876561462}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &899443739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,7 +1672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 899443741}
   - component: {fileID: 899443740}
-  - component: {fileID: 899443742}
+  - component: {fileID: 899443743}
   m_Layer: 0
   m_Name: Snow_G_M (19)
   m_TagString: Untagged
@@ -1678,8 +1718,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1707,27 +1747,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &899443742
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &899443743
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 899443739}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &958227403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,7 +1783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 958227405}
   - component: {fileID: 958227404}
-  - component: {fileID: 958227406}
+  - component: {fileID: 958227407}
   m_Layer: 0
   m_Name: Snow_G_M (13)
   m_TagString: Untagged
@@ -1784,8 +1829,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1813,27 +1858,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &958227406
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &958227407
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958227403}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &985757976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,7 +1894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 985757977}
   - component: {fileID: 985757978}
-  - component: {fileID: 985757979}
+  - component: {fileID: 985757980}
   m_Layer: 0
   m_Name: Snow_G_M (6)
   m_TagString: Untagged
@@ -1905,8 +1955,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1919,27 +1969,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &985757979
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &985757980
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985757976}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1025546103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,7 +2005,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025546104}
   - component: {fileID: 1025546105}
-  - component: {fileID: 1025546106}
+  - component: {fileID: 1025546107}
   m_Layer: 0
   m_Name: Snow_G_M (1)
   m_TagString: Untagged
@@ -2011,8 +2066,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2025,27 +2080,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1025546106
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1025546107
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025546103}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1035579960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035579962}
   - component: {fileID: 1035579961}
-  - component: {fileID: 1035579963}
+  - component: {fileID: 1035579964}
   m_Layer: 0
   m_Name: Snow_G_M
   m_TagString: Untagged
@@ -2084,7 +2144,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fcc9d6836bb07664ab63319c5b67eac0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2102,8 +2162,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2152,27 +2212,32 @@ Transform:
   m_Father: {fileID: 1197264223}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1035579963
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1035579964
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035579960}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1060180358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,7 +2248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1060180360}
   - component: {fileID: 1060180359}
-  - component: {fileID: 1060180361}
+  - component: {fileID: 1060180362}
   m_Layer: 0
   m_Name: Snow_G_M (14)
   m_TagString: Untagged
@@ -2229,8 +2294,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2258,27 +2323,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1060180361
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1060180362
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060180358}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1157018782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,7 +2735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338092806}
   - component: {fileID: 1338092805}
-  - component: {fileID: 1338092807}
+  - component: {fileID: 1338092808}
   m_Layer: 0
   m_Name: Snow_G_M (16)
   m_TagString: Untagged
@@ -2711,8 +2781,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2740,27 +2810,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1338092807
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1338092808
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338092804}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1491206286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,7 +2846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1491206287}
   - component: {fileID: 1491206288}
-  - component: {fileID: 1491206289}
+  - component: {fileID: 1491206290}
   m_Layer: 0
   m_Name: Snow_G_M (10)
   m_TagString: Untagged
@@ -2832,8 +2907,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2846,27 +2921,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1491206289
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1491206290
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491206286}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1523215237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,7 +2957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1523215238}
   - component: {fileID: 1523215239}
-  - component: {fileID: 1523215240}
+  - component: {fileID: 1523215241}
   m_Layer: 0
   m_Name: Snow_G_M (5)
   m_TagString: Untagged
@@ -2938,8 +3018,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2952,27 +3032,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1523215240
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1523215241
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523215237}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1550795386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,7 +3068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1550795388}
   - component: {fileID: 1550795387}
-  - component: {fileID: 1550795389}
+  - component: {fileID: 1550795390}
   m_Layer: 0
   m_Name: Snow_G_M (18)
   m_TagString: Untagged
@@ -3029,8 +3114,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3058,27 +3143,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1550795389
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1550795390
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550795386}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1627815642
 GameObject:
   m_ObjectHideFlags: 0
@@ -3089,7 +3179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1627815643}
   - component: {fileID: 1627815644}
-  - component: {fileID: 1627815645}
+  - component: {fileID: 1627815646}
   m_Layer: 0
   m_Name: Snow_G_M (8)
   m_TagString: Untagged
@@ -3150,8 +3240,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3164,27 +3254,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1627815645
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1627815646
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627815642}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1928323515
 GameObject:
   m_ObjectHideFlags: 0
@@ -3195,7 +3290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928323516}
   - component: {fileID: 1928323517}
-  - component: {fileID: 1928323518}
+  - component: {fileID: 1928323519}
   m_Layer: 0
   m_Name: Snow_G_M (7)
   m_TagString: Untagged
@@ -3256,8 +3351,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3270,27 +3365,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1928323518
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1928323519
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928323515}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2079740001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,7 +3401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2079740003}
   - component: {fileID: 2079740002}
-  - component: {fileID: 2079740004}
+  - component: {fileID: 2079740005}
   m_Layer: 0
   m_Name: Snow_G_M (12)
   m_TagString: Untagged
@@ -3347,8 +3447,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3376,27 +3476,32 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &2079740004
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &2079740005
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079740001}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2099616074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3407,7 +3512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2099616076}
   - component: {fileID: 2099616075}
-  - component: {fileID: 2099616077}
+  - component: {fileID: 2099616078}
   m_Layer: 0
   m_Name: Snow_G_M (21)
   m_TagString: Untagged
@@ -3453,8 +3558,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1751248773
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300052, guid: 5afbff6f96636d34d801464d3179b7d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3482,24 +3587,29 @@ Transform:
   m_Father: {fileID: 1035579962}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &2099616077
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &2099616078
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099616074}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
