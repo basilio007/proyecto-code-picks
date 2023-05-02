@@ -3285,6 +3285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1924982041}
   - component: {fileID: 1924982042}
+  - component: {fileID: 1924982043}
   m_Layer: 5
   m_Name: Slider
   m_TagString: VidaVisual
@@ -3366,6 +3367,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1924982043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924982040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0629b6558711d044b69af5b83807ad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaPlayer: 100
 --- !u!1 &1954466758
 GameObject:
   m_ObjectHideFlags: 0
