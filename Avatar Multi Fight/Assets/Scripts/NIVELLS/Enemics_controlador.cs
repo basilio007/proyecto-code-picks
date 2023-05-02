@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-public class enemycontroler : MonoBehaviour
+public class Enemics_controlador : MonoBehaviour
 {
 
 
@@ -160,102 +160,24 @@ public class enemycontroler : MonoBehaviour
 
     private void Crearenemigos()
     {
-        Id_Enemy++;
-        //creara 2 enemics més 
-        if (Id_Enemy <= 2)
+        Id_Enemy++; // ara porta 2 tios eliminats
+        if (Id_Enemy <= 5)
         {
            
-        int numeroEnemigo = Random.Range(0, enemigos.Length);
-        Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 0));
-        var newObject = Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
-        newObject.name = "Player_1_" + Id_Enemy.ToString();
+        
+      
+
+            int numeroEnemigo = Random.Range(0, enemigos.Length);
+            Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 0));
+            var newObject = Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
+            newObject.name = "Player_1_" + Id_Enemy.ToString();
+
 
         }
         else
         {
-            SceneManager.LoadScene("ice scene", LoadSceneMode.Single);
+            SceneManager.LoadScene("ciudad", LoadSceneMode.Single);
         }
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////////video youtube////////////////////////////////////////////////
-/*private float minX, maxX, minY, maxY;
-[SerializeField] private Transform[] puntos;
-[SerializeField] private GameObject[] enemigos;
-[SerializeField] private float tiempoEnemigos;
-private float tiempoEnemigosSiguiente;
-
-private void Start()
-{
-    maxX = puntos.Max(punto => punto.position.x);
-    minX = puntos.Min(punto => punto.position.x);
-
-    minX = puntos.Min(punto => punto.position.y);
-    minX = puntos.Min(punto => punto.position.y);
-
-
-}
-
-private void Update()
-{
-    tiempoEnemigosSiguiente += Time.deltaTime;
-    if (tiempoEnemigosSiguiente >= tiempoEnemigos)
-    {
-        tiempoEnemigosSiguiente = 0;
-        Crearenemigos();
-    }
-}
-
-private void Crearenemigos()
-{
-    int numeroEnemigo = Random.Range(0, enemigos.Length);
-    Vector2 posicioAleatoria = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-    Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
-}
-
-
-}*/
