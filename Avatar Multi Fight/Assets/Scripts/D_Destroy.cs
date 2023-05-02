@@ -6,9 +6,15 @@ using UnityEngine.SceneManagement;
 public class D_Destroy : MonoBehaviour
 {
     // Start is called before the first frame update
+    
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        
+            DontDestroyOnLoad(this.gameObject);
+        
+        
+
+
     }
 
     // Update is called once per frame

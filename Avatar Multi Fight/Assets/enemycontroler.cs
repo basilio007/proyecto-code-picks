@@ -159,12 +159,22 @@ public class enemycontroler : MonoBehaviour
 
     private void Crearenemigos()
     {
-        Id_Enemy++;
+        //creara 3 enemics més 
+        if (Id_Enemy <= 2)
+        {
+            Id_Enemy++;
         int numeroEnemigo = Random.Range(0, enemigos.Length);
         Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 0));
         var newObject = Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
         newObject.name = "Player_1_" + Id_Enemy.ToString();
+
+        }
+        else
+        {
+
+        }
     }
+
 }
 
 

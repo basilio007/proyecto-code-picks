@@ -49,7 +49,7 @@ public class CHICAPEGA : MonoBehaviour
         if (col.tag == "Enemigo")
 
         {
-            if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A))
             {
                 if (Time.timeSinceLevelLoad > time_to_hit)
                 {
