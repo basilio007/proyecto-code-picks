@@ -15,6 +15,7 @@ public class ChicoPega : MonoBehaviour
 
     void Start() 
     {
+        Chica2 = GameObject.FindGameObjectWithTag("Chica2");
         Anim1 = gameObject.GetComponent<Animator>();
         timeCooldown = 1f;
     }

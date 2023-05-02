@@ -398,7 +398,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &274159665
 GameObject:
@@ -778,7 +778,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705178985
 GameObject:
@@ -1488,7 +1488,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1208605092
 GameObject:
@@ -2596,16 +2596,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444571666}
   m_LocalRotation: {x: -0, y: 0.18175231, z: -0, w: 0.9833444}
-  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 3.04}
   m_LocalScale: {x: 6.3334756, y: 11.763197, z: 0.95581}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 20.944, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.74, y: -0.91}
+  m_AnchoredPosition: {x: -6.103324, y: -0.88}
   m_SizeDelta: {x: 0.2552, y: 0.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444571676
@@ -2636,7 +2636,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.031713, y: -0.08062831}
+  m_Offset: {x: -0, y: -0.08062831}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3287,7 +3287,7 @@ GameObject:
   - component: {fileID: 1924982042}
   m_Layer: 5
   m_Name: Slider
-  m_TagString: Untagged
+  m_TagString: VidaVisual
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3707,7 +3707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6433641591930657868, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6433641591930657868, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3715,7 +3715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6433641591930657868, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.08
+      value: -1.0800002
       objectReference: {fileID: 0}
     - target: {fileID: 6433641591930657868, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
       propertyPath: m_LocalPosition.z

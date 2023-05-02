@@ -51,8 +51,12 @@ public class CHICAPEGA : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A))
             {
+
+                Debug.Log("" + Time.timeSinceLevelLoad + " > " + time_to_hit);
+
                 if (Time.timeSinceLevelLoad > time_to_hit)
                 {
+                    
                     time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
                     
                     GameObject.Find(col.name).GetComponent<VIDACHICO>().vidaENEMIGO -= damage_chica;

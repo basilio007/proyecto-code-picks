@@ -7,6 +7,9 @@ TagManager:
   - Enemigo
   - Chica2
   - Dust
+  - ManaSprite
+  - HealthSprite
+  - VidaVisual
   layers:
   - Default
   - TransparentFX

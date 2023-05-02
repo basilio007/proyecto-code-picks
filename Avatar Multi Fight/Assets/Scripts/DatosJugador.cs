@@ -12,13 +12,20 @@ public class DatosJugador : MonoBehaviour
     Animator Anim2;
     public GameObject END;
 
+    ChicaController chica = null;
+
 
     public event EventHandler MuerteJugadora;
 
     void Start() 
     {
+        GameObject obj = GameObject.FindGameObjectWithTag("VidaVisual");
+
         Anim2 = gameObject.GetComponent<Animator>();
-        vidaPlayer = 100;
+        vidaVisual = obj.GetComponent<Slider>();
+
+        chica = obj.GetComponent<ChicaController>();
+        vidaPlayer = chica.vidaPlayer;
         vida_Vieja = 100;
     }
 
@@ -31,6 +38,7 @@ public class DatosJugador : MonoBehaviour
         {
             Anim2.SetTrigger("dano");
             vida_Vieja = vidaPlayer;
+            chica.vidaPlayer = vida_Vieja;
         }
 
 
