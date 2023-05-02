@@ -3627,7 +3627,7 @@ MonoBehaviour:
   distancia: 0
   enemigos:
   - {fileID: 6433641591930657867, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
-  tiempoEnemigos: 2
+  tiempoEnemigos: 15
 --- !u!1 &1928323515
 GameObject:
   m_ObjectHideFlags: 0
