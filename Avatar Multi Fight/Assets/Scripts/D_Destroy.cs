@@ -22,7 +22,7 @@ public class D_Destroy : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.M))
         {
-            SceneManager.LoadScene("ice scene",LoadSceneMode.Single);
+           // SceneManager.LoadScene("ice scene",LoadSceneMode.Single);
         }
         
         

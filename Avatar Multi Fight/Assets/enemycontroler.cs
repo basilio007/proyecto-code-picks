@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class enemycontroler : MonoBehaviour
 {
@@ -159,10 +160,11 @@ public class enemycontroler : MonoBehaviour
 
     private void Crearenemigos()
     {
+        Id_Enemy++;
         //creara 3 enemics més 
         if (Id_Enemy <= 2)
         {
-            Id_Enemy++;
+           
         int numeroEnemigo = Random.Range(0, enemigos.Length);
         Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 0));
         var newObject = Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
@@ -171,7 +173,7 @@ public class enemycontroler : MonoBehaviour
         }
         else
         {
-
+            SceneManager.LoadScene("ice scene", LoadSceneMode.Single);
         }
     }
 
