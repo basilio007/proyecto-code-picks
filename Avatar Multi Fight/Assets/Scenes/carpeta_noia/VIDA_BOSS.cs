@@ -14,7 +14,7 @@ public class VIDA_BOSS : MonoBehaviour
     // public GameObject END;
 
 
-    public event EventHandler MuerteChic;
+    public event EventHandler MuerteChico;
 
     void Start()
     {
@@ -40,7 +40,7 @@ public class VIDA_BOSS : MonoBehaviour
         if (vidaENEMIGO <= 0)
         {
 
-            MuerteChic?.Invoke(this, EventArgs.Empty);
+            MuerteChico?.Invoke(this, EventArgs.Empty);
             //Anim2.SetTrigger("DA�O_CHICO");
             Destroy(gameObject);
 

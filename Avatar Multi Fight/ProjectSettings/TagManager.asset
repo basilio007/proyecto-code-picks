@@ -10,6 +10,7 @@ TagManager:
   - ManaSprite
   - HealthSprite
   - VidaVisual
+  - ENEMIGA
   layers:
   - Default
   - TransparentFX

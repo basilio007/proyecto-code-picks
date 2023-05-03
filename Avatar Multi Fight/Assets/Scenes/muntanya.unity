@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 232687830}
   - component: {fileID: 232687829}
   - component: {fileID: 232687828}
-  - component: {fileID: 232687827}
+  - component: {fileID: 232687838}
   m_Layer: 0
   m_Name: 'Chica2 '
   m_TagString: Chica2
@@ -149,22 +149,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &232687827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232687826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96582128062f70440bd4e91b17ef8afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage_chica: 50
-  Enemigo: {fileID: 0}
-  time_to_hit: 0
-  timeCooldown: 0
 --- !u!61 &232687828
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -392,6 +376,22 @@ RectTransform:
   m_AnchoredPosition: {x: -8.05, y: -1.19}
   m_SizeDelta: {x: 0.2552, y: 0.63}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &232687838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232687826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dee77b8efda4e7479ec2bf9395021af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_chica: 50
+  Enemigo: {fileID: 0}
+  time_to_hit: 0
+  timeCooldown: 0
 --- !u!1 &453614974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2373796174062785965, guid: f38db0425eb0441458f2cb2ab5f97e33, type: 3}
@@ -5578,7 +5578,7 @@ MonoBehaviour:
   velocidaddemovimiento: 2
   puntordemovimiento:
   - {fileID: 232687837}
-  distancia: 2
+  distancia: 10
   enemigos:
   - {fileID: 453614974}
   tiempoEnemigos: 8
@@ -5883,6 +5883,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2373796174062785880, guid: f38db0425eb0441458f2cb2ab5f97e33, type: 3}
+      propertyPath: Chica2
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2373796174062785882, guid: f38db0425eb0441458f2cb2ab5f97e33, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5978,6 +5982,10 @@ PrefabInstance:
     - target: {fileID: 2373796174062785965, guid: f38db0425eb0441458f2cb2ab5f97e33, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373796174062785965, guid: f38db0425eb0441458f2cb2ab5f97e33, type: 3}
+      propertyPath: m_TagString
+      value: ENEMIGA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f38db0425eb0441458f2cb2ab5f97e33, type: 3}

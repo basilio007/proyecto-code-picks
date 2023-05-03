@@ -32,7 +32,7 @@ public class MOURE : MonoBehaviour
         gameObject.GetComponent<Animator>().SetBool("moving", true);
         if (Vector2.Distance(transform.position, puntordemovimiento.position) < distancia)
         {
-            gameObject.GetComponent<Animator>().SetBool("moving", true);
+           
             numrandom = Random.Range(0, 1);
             Girar();
 
@@ -47,13 +47,13 @@ public class MOURE : MonoBehaviour
         if (transform.position.x < puntordemovimiento.position.x)
         {
            
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
 
         }
         else
         {
             gameObject.GetComponent<Animator>().SetBool("moving", false);
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
         }
     }
 
