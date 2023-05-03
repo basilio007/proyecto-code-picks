@@ -55,7 +55,7 @@ public class PEGAR_CHICO : MonoBehaviour
                 if (Time.timeSinceLevelLoad > time_to_hit)
                 {
                     time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
-                    DatosJugador.vidaPlayer -= damage_enemigo;
+                    DatosJugadora.vidaPlayer -= damage_enemigo;
 
                     //Anim3.SetTrigger("PUÑO");
                 }

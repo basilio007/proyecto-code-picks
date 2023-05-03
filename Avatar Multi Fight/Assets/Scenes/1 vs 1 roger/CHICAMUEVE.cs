@@ -59,7 +59,7 @@ public class CHICAMUEVE : MonoBehaviour
         //animacion puño
         if (Input.GetKeyDown(KeyCode.W))
         {
-            anim.SetTrigger("PUÑO");
+            anim.SetTrigger("PUNO");
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
