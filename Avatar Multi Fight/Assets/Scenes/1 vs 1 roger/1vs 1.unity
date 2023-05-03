@@ -3608,8 +3608,8 @@ GameObject:
   - component: {fileID: 1444571671}
   - component: {fileID: 1444571670}
   - component: {fileID: 1444571669}
-  - component: {fileID: 1444571676}
   - component: {fileID: 1444571677}
+  - component: {fileID: 1444571681}
   - component: {fileID: 1444571679}
   - component: {fileID: 1444571680}
   m_Layer: 0
@@ -3793,21 +3793,6 @@ RectTransform:
   m_AnchoredPosition: {x: -10.25, y: -0.85}
   m_SizeDelta: {x: 0.2552, y: 0.63}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1444571676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444571666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730fdb656f8157d4ea2a442258fa68b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida_Vieja: 0
-  vidaVisual: {fileID: 1924982042}
-  END: {fileID: 760807366}
 --- !u!61 &1444571677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3862,6 +3847,21 @@ MonoBehaviour:
   Enemigo: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0
+--- !u!114 &1444571681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444571666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c206b49c6ebdc44b8f15bd57ba99d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida_Vieja: 0
+  vidaVisual: {fileID: 1924982042}
+  END: {fileID: 760807366}
 --- !u!1 &1540670602
 GameObject:
   m_ObjectHideFlags: 0

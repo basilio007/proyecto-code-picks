@@ -55,11 +55,11 @@ public class Chicoversus : MonoBehaviour
         //animacion puño tio
         if (Input.GetKeyDown(KeyCode.P))
         {
-            anim.SetBool("Puño",true);
+            anim.SetBool("Puno",true);
         }
         if (!Input.GetKeyDown(KeyCode.P))
         {
-            anim.SetBool("Puño", false);
+            anim.SetBool("Puno", false);
         }
 
 
