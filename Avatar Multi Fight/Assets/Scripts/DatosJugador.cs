@@ -36,7 +36,7 @@ public class DatosJugador : MonoBehaviour
 
         if (vidaPlayer != vida_Vieja)
         {
-            Anim2.SetTrigger("dano");
+           // Anim2.SetTrigger("dano");
             vida_Vieja = vidaPlayer;
             chica.vidaPlayer = vida_Vieja;
         }

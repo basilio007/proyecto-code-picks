@@ -392,11 +392,6 @@ MonoBehaviour:
   Enemigo: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0
---- !u!1 &453614974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2373796174062785965, guid: f38db0425eb0441458f2cb2ab5f97e33, type: 3}
-  m_PrefabInstance: {fileID: 2373796173710887123}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620398342
 GameObject:
   m_ObjectHideFlags: 0
@@ -5554,7 +5549,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1764683470}
-  - component: {fileID: 1764683469}
   m_Layer: 0
   m_Name: enemycontroler
   m_TagString: Untagged
@@ -5562,26 +5556,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1764683469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764683468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d11a45566ac05f9439017376fc86e46f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Id_Enemy: 10
-  velocidaddemovimiento: 2
-  puntordemovimiento:
-  - {fileID: 232687837}
-  distancia: 10
-  enemigos:
-  - {fileID: 453614974}
-  tiempoEnemigos: 8
 --- !u!4 &1764683470
 Transform:
   m_ObjectHideFlags: 0
