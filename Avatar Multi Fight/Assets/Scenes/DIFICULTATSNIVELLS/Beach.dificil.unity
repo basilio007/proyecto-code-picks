@@ -3736,28 +3736,5 @@ PrefabInstance:
       propertyPath: puntordemovimiento.Array.data[0]
       value: 
       objectReference: {fileID: 1444571675}
-    m_RemovedComponents:
-    - {fileID: 6433641591930657971, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
---- !u!1 &6433641592379726644 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6433641591930657867, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
-  m_PrefabInstance: {fileID: 6433641592379726643}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6433641592379726645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6433641592379726644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d08a129b71601449a4b55887dc53c3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidaddemovimiento: 2
-  puntordemovimiento: {fileID: 0}
-  distancia: 0
-  numrandom: 0
-  spriteRenderer: {fileID: 0}
