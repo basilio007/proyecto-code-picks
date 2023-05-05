@@ -24,9 +24,9 @@ public class FELICITACIONES_JUEGO : MonoBehaviour
 
 
 
-    public void MenuInicial(string nombre)
+    public void Menu()
     {
-        SceneManager.LoadScene(nombre);
+        SceneManager.LoadScene("Menu inicial-juego");
     }
 
     public void Salir()

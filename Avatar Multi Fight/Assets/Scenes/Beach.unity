@@ -1577,7 +1577,6 @@ GameObject:
   - component: {fileID: 1213000224}
   - component: {fileID: 1213000223}
   - component: {fileID: 1213000225}
-  - component: {fileID: 1213000226}
   m_Layer: 0
   m_Name: suelo
   m_TagString: Untagged
@@ -1678,19 +1677,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 40.96, y: 40.96}
   m_EdgeRadius: 0
---- !u!114 &1213000226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213000222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e11ed98557cbc45ac230b8953e4bd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadMovimiento: {x: 0.2, y: 0}
 --- !u!1 &1265219825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,7 +2073,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1385492535}
   - component: {fileID: 1385492534}
-  - component: {fileID: 1385492536}
   m_Layer: 0
   m_Name: platform-block-09
   m_TagString: Untagged
@@ -2162,19 +2147,6 @@ Transform:
   m_Father: {fileID: 2053949078}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1385492536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385492533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e11ed98557cbc45ac230b8953e4bd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadMovimiento: {x: 0.2, y: 0}
 --- !u!1 &1409516692
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,7 +3534,6 @@ GameObject:
   - component: {fileID: 2060410518}
   - component: {fileID: 2060410517}
   - component: {fileID: 2060410519}
-  - component: {fileID: 2060410520}
   m_Layer: 0
   m_Name: jungle-tree-02
   m_TagString: Untagged
@@ -3663,19 +3634,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.635945, y: 17.562193}
   m_EdgeRadius: 0
---- !u!114 &2060410520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060410516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e11ed98557cbc45ac230b8953e4bd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadMovimiento: {x: 0.2, y: 0}
 --- !u!1 &2138885531
 GameObject:
   m_ObjectHideFlags: 0
