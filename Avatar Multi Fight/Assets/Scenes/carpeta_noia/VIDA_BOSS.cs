@@ -11,7 +11,7 @@ public class VIDA_BOSS : MonoBehaviour
     //public Slider vidaVisual;
     Animator Anim2;
 
-    // public GameObject END;
+     public GameObject END;
 
 
     public event EventHandler MuerteChico;
@@ -39,13 +39,13 @@ public class VIDA_BOSS : MonoBehaviour
 
         if (vidaENEMIGO <= 0)
         {
-
+            
             MuerteChico?.Invoke(this, EventArgs.Empty);
             //Anim2.SetTrigger("DA�O_CHICO");
             Destroy(gameObject);
 
-
-            Debug.Log("ENEMIGO DERROTADO");
+            END.SetActive(true);
+            Debug.Log("TIA DURA OUT");
         }
 
     }
