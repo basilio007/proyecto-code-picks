@@ -31,6 +31,11 @@ public class MenuInicial : MonoBehaviour
         Application.Quit();
 
     }
+
+    public void ModoDificil()
+    {
+        SceneManager.LoadScene("Beach.dificil");
+    }
 }
 
 

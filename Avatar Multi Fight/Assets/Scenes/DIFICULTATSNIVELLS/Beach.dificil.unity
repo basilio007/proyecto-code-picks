@@ -123,6 +123,42 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &4692839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6433641591930657867, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
+  m_PrefabInstance: {fileID: 6433641592379726643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4692849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a8f3e680b81394c9346177acbb6db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaENEMIGO: 0
+  vida_Vieja: 0
+--- !u!114 &4692850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1c97429d49eed4294b403fb2760fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 15
+  Chica2: {fileID: 1444571666}
+  time_to_hit: 0
+  timeCooldown: 0
+  time_Visual: 0
 --- !u!1 &70590931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,9 +2420,10 @@ GameObject:
   - component: {fileID: 1444571670}
   - component: {fileID: 1444571669}
   - component: {fileID: 1444571667}
-  - component: {fileID: 1444571676}
   - component: {fileID: 1444571677}
   - component: {fileID: 1444571678}
+  - component: {fileID: 1444571680}
+  - component: {fileID: 1444571679}
   m_Layer: 0
   m_Name: Chica2
   m_TagString: Chica2
@@ -2580,21 +2617,6 @@ RectTransform:
   m_AnchoredPosition: {x: -6.103324, y: -0.88}
   m_SizeDelta: {x: 0.2552, y: 0.63}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1444571676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444571666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730fdb656f8157d4ea2a442258fa68b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida_Vieja: 0
-  vidaVisual: {fileID: 1924982042}
-  END: {fileID: 1438265889}
 --- !u!61 &1444571677
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2637,6 +2659,37 @@ MonoBehaviour:
   Enemigo: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0
+--- !u!114 &1444571679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444571666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469cd8e6579f98046b4669cc8ba2a348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_chica: 100
+  Enemigo: {fileID: 0}
+  time_to_hit: 0
+  timeCooldown: 0
+--- !u!114 &1444571680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444571666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c822051494a5324dac6ec1c623b34a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida_Vieja: 0
+  vidaVisual: {fileID: 1924982042}
+  END: {fileID: 1438265889}
 --- !u!1 &1471702755
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,5 +3789,7 @@ PrefabInstance:
       propertyPath: puntordemovimiento.Array.data[0]
       value: 
       objectReference: {fileID: 1444571675}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6433641591930657970, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
+    - {fileID: 6433641591930657968, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
