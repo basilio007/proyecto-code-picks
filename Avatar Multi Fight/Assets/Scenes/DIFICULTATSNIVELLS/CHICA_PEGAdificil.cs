@@ -47,6 +47,30 @@ public class CHICA_PEGAdificil : MonoBehaviour
     void OnTriggerStay2D(Collider2D col)
     {
 
+        if (col.tag == "ENEMIGA")
+        {
+            if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A))
+            {
+
+                Debug.Log("" + Time.timeSinceLevelLoad + " > " + time_to_hit);
+
+                if (Time.timeSinceLevelLoad > time_to_hit)
+                {
+
+                    time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
+
+
+                    GameObject.Find(col.name).GetComponent<VIDA_BOSS_DIFICIL>().vidaENEMIGO -= damage_chica;
+
+                    //Anim3.SetTrigger("PU�O");
+                }
+                else
+                {
+                }
+
+            }
+        }
+
         if (col.tag == "Enemigo")
 
         {
@@ -62,10 +86,12 @@ public class CHICA_PEGAdificil : MonoBehaviour
 
                     GameObject.Find(col.name).GetComponent<VIDA_CHICO_DIFICIL>().vidaENEMIGO -= damage_chica;
 
+
                     //Anim3.SetTrigger("PU�O");
                 }
                 else
                 {
+
                 }
 
                 //Chica2.GetComponent<DatosJugador>().restarVida(damage);
@@ -73,12 +99,8 @@ public class CHICA_PEGAdificil : MonoBehaviour
 
             }
 
-            if (col.tag == "Enemigo")
-            {
+         
 
-            }
         }
     }
-
-
 }

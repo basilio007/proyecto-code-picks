@@ -167,6 +167,7 @@ public class ENEMY_CONTROLLER_DIFICIL1 : MonoBehaviour
             Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 0));
             var newObject = Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
             newObject.name = "JUGADOR_1_" + Id_Enemy.ToString();
+            //newObject.name = "enemiga_1_" + Id_Enemy.ToString();
 
         }
         else

@@ -61,6 +61,7 @@ public class CHICAPEGA : MonoBehaviour
                     
                     GameObject.Find(col.name).GetComponent<VIDACHICO>().vidaENEMIGO -= damage_chica;
 
+
                     //Anim3.SetTrigger("PU�O");
                 }
                 else
