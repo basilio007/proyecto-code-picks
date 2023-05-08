@@ -47,13 +47,13 @@ public class MOURE_CHICA_DIFICIL : MonoBehaviour
         if (transform.position.x < puntordemovimiento.position.x)
         {
 
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;// els prefabs es mouen be pero aquesta mateixa no per que sorti be tinc que ficar true i al else false
 
         }
         else
         {
             gameObject.GetComponent<Animator>().SetBool("moving", false);
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
         }
     }
 
