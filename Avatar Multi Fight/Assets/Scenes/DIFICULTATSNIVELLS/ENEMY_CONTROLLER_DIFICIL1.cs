@@ -160,14 +160,14 @@ public class ENEMY_CONTROLLER_DIFICIL1 : MonoBehaviour
     {
         Id_Enemy++;
         //creara 2 enemics més 
-        if (Id_Enemy <= 2)
+        if (Id_Enemy <= 3)
         {
 
             int numeroEnemigo = Random.Range(0, enemigos.Length);
             Vector2 posicioAleatoria = new Vector2(Random.Range(-10, 10), Random.Range(0, 0));
             var newObject = Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
             newObject.name = "JUGADOR_1_" + Id_Enemy.ToString();
-            //newObject.name = "enemiga_1_" + Id_Enemy.ToString();
+            newObject.name = "enemiga_1_" + Id_Enemy.ToString();
 
         }
         else
