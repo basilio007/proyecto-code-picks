@@ -1610,7 +1610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1044245289}
-  - component: {fileID: 1044245288}
+  - component: {fileID: 1044245290}
   m_Layer: 0
   m_Name: enemycontroler
   m_TagString: Untagged
@@ -1618,26 +1618,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1044245288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044245287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5082dcdee718c74dbc2442b52ef89b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Id_Enemy: 8
-  velocidaddemovimiento: 2
-  puntordemovimiento:
-  - {fileID: 191361929}
-  distancia: 10
-  enemigos:
-  - {fileID: 6433641591930657867, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
-  tiempoEnemigos: 10
 --- !u!4 &1044245289
 Transform:
   m_ObjectHideFlags: 0
@@ -1653,6 +1633,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1044245290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044245287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1895e0edc538dc49bf3bb92d53b6958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Id_Enemy: 8
+  velocidaddemovimiento: 2
+  puntordemovimiento:
+  - {fileID: 191361929}
+  distancia: 10
+  enemigos:
+  - {fileID: 6433641591930657867, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
+  tiempoEnemigos: 10
 --- !u!1 &1068338500
 GameObject:
   m_ObjectHideFlags: 0

@@ -4183,13 +4183,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1826949862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6376febc130b1be42a6fe9af1376d0d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b0441a9054fa864e9675e0d5bd19eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Id_Enemy: 3
   velocidaddemovimiento: 2
   puntordemovimiento:
-  - {fileID: 0}
+  - {fileID: 1817165748}
   distancia: 10
   enemigos:
   - {fileID: 6433641591930657867, guid: bf9146f5a61692b4f800663bc090cfe7, type: 3}
