@@ -35,4 +35,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DIFICULTATSNIVELLS/muntanya.dificil.unity
     guid: 0bc351a68fd92d34494e63ee171e5c37
+  - enabled: 1
+    path: Assets/Scenes/DIFICULTATSNIVELLS/NIVELL_MITJA/Beach.medio.unity
+    guid: 37e7836fad2f36a4aa7cbe68f01ae305
+  - enabled: 1
+    path: Assets/Scenes/DIFICULTATSNIVELLS/NIVELL_MITJA/ice scene.medio.unity
+    guid: 2e6858d01262ca0439911d78526d6b5b
+  - enabled: 1
+    path: Assets/Scenes/DIFICULTATSNIVELLS/NIVELL_MITJA/ciudad.medio.unity
+    guid: 780d7c7d5358ec74da4edcd8f0c0b0cb
+  - enabled: 1
+    path: Assets/Scenes/DIFICULTATSNIVELLS/NIVELL_MITJA/muntanya.medio.unity
+    guid: 37c7553de7e8c2b4f806c4f1b3c570b8
   m_configObjects: {}
