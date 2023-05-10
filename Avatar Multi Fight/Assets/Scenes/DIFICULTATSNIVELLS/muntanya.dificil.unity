@@ -6558,7 +6558,7 @@ MonoBehaviour:
   - {fileID: 1844190263}
   distancia: 10
   enemigos:
-  - {fileID: 2249478898523009710, guid: 34a30402f45a2134db1bb3b0a6820ef8, type: 3}
+  - {fileID: 255883223439709966, guid: 00eda628be7d6c34382433b1c1195265, type: 3}
   tiempoEnemigos: 10
 --- !u!4 &1733963404
 Transform:
