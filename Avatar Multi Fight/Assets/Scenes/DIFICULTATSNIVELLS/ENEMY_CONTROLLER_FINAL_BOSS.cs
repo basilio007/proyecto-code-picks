@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
-public class ENEMY_CONTROLLER_DIFICIL1 : MonoBehaviour
+public class ENEMY_CONTROLLER_FINAL_BOSS : MonoBehaviour
 {
-
 
     public int Id_Enemy;
 
@@ -97,11 +96,11 @@ public class ENEMY_CONTROLLER_DIFICIL1 : MonoBehaviour
 
           }
       }
-  }
+    }
 
     ////////////////////////////////////////modificacio meva//////////////////////
 
- */
+    */
 
 
 
@@ -158,22 +157,21 @@ public class ENEMY_CONTROLLER_DIFICIL1 : MonoBehaviour
 
     private void Crearenemigos()
     {
-        Id_Enemy++;
-        //creara 2 enemics més 
-        if (Id_Enemy <= 2)
+        Id_Enemy++; // ara porta 2 tios eliminats
+        if (Id_Enemy <= 9)
         {
+
+
+
 
             int numeroEnemigo = Random.Range(0, enemigos.Length);
             Vector2 posicioAleatoria = new Vector2(Random.Range(0, 10), Random.Range(0, 0));
             var newObject = Instantiate(enemigos[numeroEnemigo], posicioAleatoria, Quaternion.identity);
-            //newObject.name = "JUGADOR_1_" + Id_Enemy.ToString();
-            newObject.name = "enemiga_1_" + Id_Enemy.ToString();
+            newObject.name = "JUGADOR_1_" + Id_Enemy.ToString();
+
 
         }
-        else
-        {
-            SceneManager.LoadScene("ice scene.dificil", LoadSceneMode.Single);
-        }
+        
     }
 
 }

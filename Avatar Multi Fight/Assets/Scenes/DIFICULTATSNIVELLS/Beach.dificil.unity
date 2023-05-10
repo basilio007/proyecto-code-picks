@@ -778,7 +778,6 @@ MonoBehaviour:
   - {fileID: 1444571675}
   distancia: 10
   enemigos:
-  - {fileID: 255883223439709966, guid: 00eda628be7d6c34382433b1c1195265, type: 3}
   - {fileID: 2303249849133146492, guid: 19725204d32001047a25d46e2afc81a6, type: 3}
   tiempoEnemigos: 10
 --- !u!1 &705178985
@@ -3724,6 +3723,10 @@ PrefabInstance:
     - target: {fileID: 255883223439709966, guid: 00eda628be7d6c34382433b1c1195265, type: 3}
       propertyPath: m_Name
       value: JUGADOR_1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 255883223439709966, guid: 00eda628be7d6c34382433b1c1195265, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00eda628be7d6c34382433b1c1195265, type: 3}
