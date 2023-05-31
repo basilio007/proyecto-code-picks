@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CHICAPEGA : MonoBehaviour
 {
@@ -11,10 +12,16 @@ public class CHICAPEGA : MonoBehaviour
     public float timeCooldown;
     Animator Anim3;
 
+    public int score;
+
+    public Text scoreText;
+
     void Start()
     {
         Anim3 = gameObject.GetComponent<Animator>();
         timeCooldown = 1.67f;
+
+        score = 0;
 
     }
     /*void Update()
@@ -51,6 +58,10 @@ public class CHICAPEGA : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A))
             {
+                //SUMO PUNTOS A MESURA QUE PEGO OSTIES AL ENEMIGO
+                score++;
+                scoreText.text = "PUNTOS " + score;
+                Debug.Log(score);
 
                 Debug.Log("" + Time.timeSinceLevelLoad + " > " + time_to_hit);
 

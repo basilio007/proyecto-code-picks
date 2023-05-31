@@ -2412,7 +2412,6 @@ GameObject:
   - component: {fileID: 1444571676}
   - component: {fileID: 1444571677}
   - component: {fileID: 1444571678}
-  - component: {fileID: 1444571679}
   m_Layer: 0
   m_Name: Chica2
   m_TagString: Chica2
@@ -2663,18 +2662,6 @@ MonoBehaviour:
   Enemigo: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0
---- !u!114 &1444571679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1444571666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef7dbedae3121824ea36e00dfbc8e3a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1712748180}
 --- !u!1 &1471702755

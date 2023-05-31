@@ -11,6 +11,8 @@ public class enemycontroler : MonoBehaviour
 
     public int Id_Enemy;
 
+   
+  
 
     /* [SerializeField] private float velocidaddemovimiento;
       [SerializeField] private Transform[] puntordemovimiento; // puntos seria aixo
