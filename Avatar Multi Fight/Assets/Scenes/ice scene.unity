@@ -4778,7 +4778,6 @@ GameObject:
   - component: {fileID: 1817165740}
   - component: {fileID: 1817165739}
   - component: {fileID: 1817165738}
-  - component: {fileID: 1817165749}
   m_Layer: 0
   m_Name: Chica2
   m_TagString: Chica2
@@ -4802,6 +4801,8 @@ MonoBehaviour:
   Enemigo: {fileID: 0}
   time_to_hit: 0
   timeCooldown: 0
+  score: 0
+  scoreText: {fileID: 1592671529}
 --- !u!61 &1817165739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5029,20 +5030,6 @@ RectTransform:
   m_AnchoredPosition: {x: -6.103324, y: -0.61}
   m_SizeDelta: {x: 0.2552, y: 0.63}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1817165749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817165737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef7dbedae3121824ea36e00dfbc8e3a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 1592671529}
 --- !u!1 &1826949862
 GameObject:
   m_ObjectHideFlags: 0
