@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "772499524471",
+    "project_id": "fir-unity2d",
+    "storage_bucket": "fir-unity2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772499524471:android:0cbbf4e0f90939233eef72",
+        "android_client_info": {
+          "package_name": "com.codepicks.juego"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaD_9B7KYQgAaUF3Y3zv4qVqItAiIIlic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
