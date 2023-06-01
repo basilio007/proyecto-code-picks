@@ -6,10 +6,13 @@ using UnityEngine.UI;
 public class FirebaseController : MonoBehaviour
 {
 
-    public GameObject loginPanel, signupPanel, profilePanel, forgetPasswordPanel;
+    public GameObject loginPanel, signupPanel, profilePanel, forgetPasswordPanel, notificationPanel;
 
     public InputField loginEmail, loginPassword, signupEmail, signupPassword, signupCPassword, signupUserName, forgetpassEmail;
 
+    public Text notif_Title_Text, notif_Message_Text, profileUserName_Text,profileUserEmail_Text;
+
+    public Toggle RememberMe;
     public void OpenLoginPanel()
     {
         loginPanel.SetActive(true);
@@ -47,6 +50,7 @@ public class FirebaseController : MonoBehaviour
     {
         if (string.IsNullOrEmpty(loginEmail.text) && string.IsNullOrEmpty(loginPassword.text))
         {
+            showNotificationMessage("Error", "Campos vacios, porfavor rellene los campos");
             return;
         }
 
@@ -57,6 +61,7 @@ public class FirebaseController : MonoBehaviour
     {
         if (string.IsNullOrEmpty(signupEmail.text) && string.IsNullOrEmpty(signupPassword.text) && string.IsNullOrEmpty(signupCPassword.text) && string.IsNullOrEmpty(signupUserName.text))
         {
+            showNotificationMessage("Error", "Campos vacios, porfavor rellene los campos");
             return;
         }
 
@@ -66,10 +71,33 @@ public class FirebaseController : MonoBehaviour
 
     public void ForgetPass()
     {
-        if (string.IsNullOrEmpty(forgetpassEmail.text)) { 
+        if (string.IsNullOrEmpty(forgetpassEmail.text)) {
+
+            showNotificationMessage("Error", "Campos vacios, porfavor rellene los campos");
             return;
         }
     }
   
+    private void showNotificationMessage(string title,string message)
+    {
+        notif_Title_Text.text = "" + title;
+        notif_Message_Text.text = "" + message;
+    }
 
+    public void CloseNotif_Panel()
+    {
+        notif_Title_Text.text = "";
+        notif_Message_Text.text = "";
+
+        notificationPanel.SetActive(false);
+    }
+
+    public void LogOut()
+    {
+       
+        profileUserEmail_Text.text = "";
+        profileUserName_Text.text = "";
+        OpenLoginPanel();
+        
+    }
 }
