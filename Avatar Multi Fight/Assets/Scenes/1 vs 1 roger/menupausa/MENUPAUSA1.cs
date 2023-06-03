@@ -58,7 +58,7 @@ public class MENUPAUSA1 : MonoBehaviour
     public void Cerrar()
     {
 
-        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
         //SceneManager.LoadScene(0);
         // menuPause.SetActive(true);
         // SceneManager.LoadScene(0);

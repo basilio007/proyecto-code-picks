@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
 //using UnityEditor;
 
 public class MenuPause : MonoBehaviour
@@ -59,8 +58,7 @@ public class MenuPause : MonoBehaviour
     }
     public void Cerrar ()
     {
-        
-        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
         //SceneManager.LoadScene(0);
        // menuPause.SetActive(true);
         // SceneManager.LoadScene(0);

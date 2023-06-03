@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class jugador1 : MonoBehaviour
-
- {
-    bool canJump;
+{
+    
+    /*bool canJump;
 
  
 
@@ -53,5 +53,5 @@ public class jugador1 : MonoBehaviour
             canJump = true;
         }
     }
-
+    */
 }

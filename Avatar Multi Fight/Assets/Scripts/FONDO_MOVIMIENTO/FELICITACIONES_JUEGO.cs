@@ -31,7 +31,6 @@ public class FELICITACIONES_JUEGO : MonoBehaviour
 
     public void Salir()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 
