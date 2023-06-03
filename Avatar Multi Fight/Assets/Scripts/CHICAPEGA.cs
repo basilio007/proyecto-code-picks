@@ -12,7 +12,7 @@ public class CHICAPEGA : MonoBehaviour
     public float timeCooldown;
     Animator Anim3;
 
-    public int score;
+    public static int score;
 
     public Text scoreText;
 
