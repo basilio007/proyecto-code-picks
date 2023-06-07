@@ -23,6 +23,7 @@ public class Eaglemovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //hem fet que la aguila es mogui entre dos punts de forma horitzontal de esquerra a dreta
         transform.position = Vector2.MoveTowards(transform.position, puntordemovimiento[numrandom].position, velocidaddemovimiento * Time.deltaTime);
         if (Vector2.Distance(transform.position, puntordemovimiento[numrandom].position) < distancia)
         {
@@ -35,6 +36,7 @@ public class Eaglemovement : MonoBehaviour
     }
     private void Girar()
     {
+        //un cop la aguila arriba al punt de l'esquerra donara la volta i girara cap a la dreta . aixo ho fa continuament
         if (transform.position.x < puntordemovimiento[numrandom].position.x) 
         {
             spriteRenderer.flipX = true;

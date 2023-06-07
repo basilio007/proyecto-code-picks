@@ -19,11 +19,12 @@ public class DatosJugador : MonoBehaviour
 
     void Start() 
     {
+        // la vida visual es la barra de vida 
         GameObject obj = GameObject.FindGameObjectWithTag("VidaVisual");
 
         Anim2 = gameObject.GetComponent<Animator>();
         vidaVisual = obj.GetComponent<Slider>();
-
+        //la noia te 100 de vida
         chica = obj.GetComponent<ChicaController>();
         vidaPlayer = chica.vidaPlayer;
         vida_Vieja = 100;
@@ -32,6 +33,7 @@ public class DatosJugador : MonoBehaviour
 
    private void Update()
     {
+        //aqui fem que quan resti vida tambe baixi la barra de vida
         vidaVisual.GetComponent<Slider>().value = vidaPlayer;
 
         if (vidaPlayer != vida_Vieja)

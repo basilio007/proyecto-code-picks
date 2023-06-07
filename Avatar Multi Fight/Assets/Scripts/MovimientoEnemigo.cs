@@ -20,6 +20,7 @@ public class MovimientoEnemigo: MonoBehaviour
 
     void Start()
     {
+        //el enemic es dirigira al punt de moviment que en aquest cas em marcat que segueixi a la tia 
         puntordemovimiento = GameObject.Find("Chica2").transform;
         anim1 = gameObject.GetComponent<Animator>();
         numrandom = Random.Range(0, 1);
@@ -29,6 +30,7 @@ public class MovimientoEnemigo: MonoBehaviour
 
     void Update()
     {
+        //aqui fiquem perque vagi directa cap a la tia
         transform.position = Vector2.MoveTowards(transform.position, puntordemovimiento.position, velocidaddemovimiento * Time.deltaTime);
         if (Vector2.Distance(transform.position, puntordemovimiento.position) < distancia)
         {
@@ -36,7 +38,6 @@ public class MovimientoEnemigo: MonoBehaviour
             numrandom = Random.Range(0, 1);
             Girar();
 
-            //animacion pu�o
 
         }
 
@@ -44,6 +45,7 @@ public class MovimientoEnemigo: MonoBehaviour
     }
     private void Girar()
     {
+        // per a que giri cap al canto bo d'on esta la nostra noia
         if (transform.position.x < puntordemovimiento.position.x)
         {
             spriteRenderer.flipX = true;

@@ -10,6 +10,7 @@ public class MenuGAMEOVER : MonoBehaviour
 
     private void Start()
     {
+        //quan la vida de la nostra noia estigui a 0 saltara el GAME OVER
         datosjugador = GameObject.FindGameObjectWithTag("Chica2").GetComponent<DatosJugador>();
         datosjugador.MuerteJugadora += ActivarMenu;
 

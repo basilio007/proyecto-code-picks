@@ -67,7 +67,7 @@ public class CHICAPEGA : MonoBehaviour
 
                 if (Time.timeSinceLevelLoad > time_to_hit)
                 {
-                    
+                   //quan peguis al enemic li baixara la vida al moment per aixo esta fet el cooldown
                     time_to_hit = Time.timeSinceLevelLoad + timeCooldown;
                     
                     GameObject.Find(col.name).GetComponent<VIDACHICO>().vidaENEMIGO -= damage_chica;

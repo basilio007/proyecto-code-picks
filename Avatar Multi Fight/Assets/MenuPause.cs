@@ -15,6 +15,7 @@ public class MenuPause : MonoBehaviour
 
     private void Update()
     {
+        // quan toco la tecla ESC em fara el menu de pausa
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (JuegoPausado)
