@@ -38,12 +38,12 @@ public class Cagada_De_Pajaro : MonoBehaviour
         {
             if (vAlue == 1) 
             {
-                DatosJugador.vidaPlayer = DatosJugador.vidaPlayer - 20;
+                DatosJugador.vidaPlayer = DatosJugador.vidaPlayer - 10;
                 Destroy(gameObject);            
             }
             else
             {
-                DatosJugador.vidaPlayer = DatosJugador.vidaPlayer + 20;
+                DatosJugador.vidaPlayer = DatosJugador.vidaPlayer + 5;
                 Destroy(gameObject);
             }
         }
