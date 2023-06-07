@@ -38,11 +38,13 @@ public class Cagada_De_Pajaro : MonoBehaviour
         {
             if (vAlue == 1) 
             {
+                // si el valor dona 1 i la caca impacta amb la noia li restara 10 de vida
                 DatosJugador.vidaPlayer = DatosJugador.vidaPlayer - 10;
                 Destroy(gameObject);            
             }
             else
             {
+                // si impacta a la noia li sumara 5 de vida
                 DatosJugador.vidaPlayer = DatosJugador.vidaPlayer + 5;
                 Destroy(gameObject);
             }
