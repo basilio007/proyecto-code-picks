@@ -32,6 +32,7 @@ public class MenuPause : MonoBehaviour
 
     public void Pause()
     {
+        //QUAN FIQUEM APRETEM EL BOTO DE PAUSA O LA TECLA ESC S'ACTIVARA EL MENU PAUSAT I LO ALTRE HO TENIM DESACTIVAT 
         JuegoPausado =true;
         Time.timeScale = 0f;
         botonPause.SetActive(false);
@@ -40,6 +41,7 @@ public class MenuPause : MonoBehaviour
 
     public void Reanudar()
     {
+       // QUAN FIQUEM APRETEM AL MENU PAUSA  EL BOTO DE REANUDAR PODRAS REPENDRE LA PARTIDA 
         JuegoPausado = false;
         Time.timeScale = 1f;
         botonPause.SetActive(true);
@@ -48,6 +50,7 @@ public class MenuPause : MonoBehaviour
 
     public void Reiniciar()
     {
+        // QUAN FIQUEM APRETEM AL MENU PAUSA  EL BOTO DE REANUDAR PODRAS REINICIAR LA PARTIDA 
         JuegoPausado = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
