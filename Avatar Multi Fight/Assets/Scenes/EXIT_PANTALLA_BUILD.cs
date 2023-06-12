@@ -15,4 +15,9 @@ public class EXIT_PANTALLA_BUILD : MonoBehaviour
     {
         
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
